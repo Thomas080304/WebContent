@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NgShowcaseApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link href="../../lib/bootstrap-lib/css/bootstrap.min.css" rel="stylesheet">
+        <!--你自己的样式文件 --> 
+
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="../../lib/bootstrap-lib/html5shiv.js"></script>
+        <script src="../../lib/bootstrap-lib/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+          .container{
+            width: 500px;
+            margin: 0 auto;
+          }
+        </style>
+    </head>
+    <body style="padding-top:50px;">
+        <div class="container" ng-controller="ctrl.show.dbsel">
+			<div class="row">
+				<div class="col-md-4">
+					<select class="form-controll" ng-model="vm.country" 
+							ng-options="country.label for country in vm.countries">
+						<option value="">-- 请选择国家 --</option>
+					</select>
+				</div>
+				<div class="col-md-4" ng-if="vm.country">
+					<select class="form-controll" ng-model="vm.province"
+							ng-options="province.label for province in vm.country.provinces">
+						<option value="">-- 请选择省份/州 --</option>
+					</select>
+				</div>
+				<div class="col-md-4" ng-if="vm.province.cities">
+					<select class="form-controll" ng-model="vm.city" 
+							ng-options="city.label for city in vm.province.cities">
+						<option value="">-- 请选择城市/县区 --</option>
+					</select>
+				</div>
+			</div>
+            <div class="alert alert-danger alert-dismissable" role="alert">
+                <button class="close" type="button" data-dismiss="alert">&times;</button>
+                你现在选择的是:{{vm.country.label}}--{{vm.province.label}}--{{vm.city.label}}
+            </div>
+        </div>
+        
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../../lib/jQuery/jquery-1.11.3.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../../lib/bootstrap-lib/js/bootstrap.js"></script>
+        <!-- angular　-->
+        <script src="../../lib/angular-1.3.0.14/angular.js"></script>
+        <script src="./dbsel.js"></script>
+    </body>
+</html>

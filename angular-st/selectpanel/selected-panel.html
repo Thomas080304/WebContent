@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NgShowcaseApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link href="../../lib/bootstrap-lib/css/bootstrap.min.css" rel="stylesheet">
+        <!--你自己的样式文件 --> 
+
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="../../lib/bootstrap-lib/html5shiv.js"></script>
+        <script src="../../lib/bootstrap-lib/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body style="padding-top:50px;" ng-controller="ctrl.show.panel">
+        <div class="panel panel-default" ng-class="{hidden: vm.hidden}">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <span class="glyphicon glyphicon-th-list"></span>
+              点右侧的图标折叠/展开
+              <span class="pull-right">
+              <span class="glyphicon" ng-class="vm.collapsed?'glyphicon-chevron-down':'glyphicon-chevron-up'"
+                    ng-click="vm.collapsed = !vm.collapsed"></span>
+                &nbsp;
+              <span class="glyphicon glyphicon-remove" ng-click="vm.hidden = true"></span>
+              </span>
+            </h4>
+          </div>
+          <div class="panel-collapse collapse" ng-class="{in: !vm.collapsed}">
+            <div class="panel-body">
+              可折叠内容
+            </div>
+          </div>
+        </div>
+        <span class="btn btn-primary" ng-click="vm.hidden = false" ng-if="vm.hidden">重新显示</span>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">图解CSS3</div>
+            <div class="panel-body">详细讲解了选择器、边框、背景、文本、颜色、盒模型、伸缩布局盒模型、多列布局、渐变、过渡、动画、媒体、响应Web设计、Web字体等主题下涵盖的所有CSS3新特性</div>
+            <div class="panel-footer">作者：大漠</div>
+        </div>
+
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../../lib/jQuery/jquery-1.11.3.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../../lib/bootstrap-lib/js/bootstrap.js"></script>
+        <!-- angular　-->
+        <script src="../../lib/angular-1.3.0.14/angular.js"></script>
+        <script src="./selected-panel.js"></script>
+    </body>
+</html>

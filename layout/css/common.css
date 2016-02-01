@@ -1,0 +1,34 @@
+
+
+body{margin:0; /*font-size:84%;*/ background:#eee; color:#333; font-family:Verdana, Geneva, sans-serif;}
+ul,ol,form,h1,h2,h3,h4,h5,h6,p{padding:0; margin:0; list-style-type:none;}
+a{color:#34538b; text-decoration: none;}
+.l{float:left;}.r{float:right;}.cl{clear:both;}img{border:0;}
+.tc{text-align:center;}.tr{text-align:right;}
+.g0{color:#000;}.g3{color:#333;}.g6{color:#666;}.g9{color:#999;}.r3{color:#f30;}
+.vm{vertical-align:middle;}.vtb{vertical-align:text-bottom;}.vt{vertical-align:top;}.vn{vertical-align:-2px;}
+.ml2{margin-left:2px;}.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml20{margin-left:20px;}.mr2{margin-right:2px;}.mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr20{margin-right:20px;}.mt2{margin-top:2px;}.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt20{margin-top:20px;}.mb2{margin-bottom:2px;}.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb20{margin-bottom:20px;}
+.f9{font-size:0.9em;}.f10{font-size:1em;}.f11{font-size:1.1em;}.f12{font-size:1.2em;}.f13{font-size:1.3em;}.f14{font-size:1.4em;}.f15{font-size:1.5em;}.f16{font-size:1.6em;}
+.fix{*zoom:1;}.fix:after{display:table; content:""; clear:both;}
+.rel{position:relative;}.abs{position:absolute;}
+.dn{display:none;}.db{display:block;}.dib{display:inline-block;}.di{display:inline;}
+.dot{background:url(http://s1.95171.cn/b/img/dot.png) repeat-x 0 bottom;}
+
+body{
+    font-family: helvetica, arial, sans-serif;
+    background: #efefef;
+    margin: 0 0;
+}
+.p2 {
+    padding: 2px;
+}
+
+/*
+	common lib
+*/
+/*
+	common component style for nav form etc
+*/
+/*
+	nav form search
+*/

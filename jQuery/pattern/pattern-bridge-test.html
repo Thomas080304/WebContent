@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>pattern-bridge-test</title>
+    <script src="../../lib/require/require.js" data-main="./js/mainbridge">
+
+    </script>
+</head>
+<body>
+    <div id="doc">
+        <div id="queue-items"></div>
+        <h1>Add request to queue</h1>
+        <ul id="adds">
+            <li><a href="#" id="action-01">action-01</a></li>
+            <li><a href="#" id="action-02">action-02</a></li>
+            <li><a href="#" id="action-03">action-03</a></li>
+            <li><a href="#" id="action-04">action-04</a></li>
+        </ul>
+        <h2>other queue actions</h2>
+        <ul id="items">
+            <li><a href="#" id="flush">flush</a></li>
+            <li><a href="#" id="dequeue">dequeue</a></li>
+            <li><a href="#" id="pause">pause</a></li>
+            <li><a href="#" id="clear">clear</a></li>
+        </ul>
+        <div id="results-area">
+            <h1>results:</h1>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.switcher{
+    border: 1px solid #ff0000;
+}
+.default{
+    font-size: 1em;
+}
+.narrow{
+    width: 300px;
+}
+.large{
+    font-size: 2em;
+}
+.selected{
+    font-weight: bold;
+    border: 1px solid #999999;
+}
+.hover{
+    background-color: #a9a9a9;
+}
+.hidden{
+    display: none;
+}

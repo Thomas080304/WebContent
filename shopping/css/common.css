@@ -1,3 +1,17 @@
+body{margin:0; /*font-size:84%;*/ background:#eee; color:#333; font-family:Verdana, Geneva, sans-serif;}
+ul,ol,form,h1,h2,h3,h4,h5,h6,p{padding:0; margin:0; list-style-type:none;}
+a{color:#34538b; text-decoration: none;}
+.l{float:left;}.r{float:right;}.cl{clear:both;}img{border:0;}
+.tc{text-align:center;}.tr{text-align:right;}
+.g0{color:#000;}.g3{color:#333;}.g6{color:#666;}.g9{color:#999;}.r3{color:#f30;}
+.vm{vertical-align:middle;}.vtb{vertical-align:text-bottom;}.vt{vertical-align:top;}.vn{vertical-align:-2px;}
+.ml2{margin-left:2px;}.ml5{margin-left:5px;}.ml10{margin-left:10px;}.ml20{margin-left:20px;}.mr2{margin-right:2px;}.mr5{margin-right:5px;}.mr10{margin-right:10px;}.mr20{margin-right:20px;}.mt2{margin-top:2px;}.mt5{margin-top:5px;}.mt10{margin-top:10px;}.mt20{margin-top:20px;}.mb2{margin-bottom:2px;}.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb20{margin-bottom:20px;}
+.f9{font-size:0.9em;}.f10{font-size:1em;}.f11{font-size:1.1em;}.f12{font-size:1.2em;}.f13{font-size:1.3em;}.f14{font-size:1.4em;}.f15{font-size:1.5em;}.f16{font-size:1.6em;}
+.fix{*zoom:1;}.fix:after{display:table; content:""; clear:both;}
+.rel{position:relative;}.abs{position:absolute;}
+.dn{display:none;}.db{display:block;}.dib{display:inline-block;}.di{display:inline;}
+.dot{background:url(http://s1.95171.cn/b/img/dot.png) repeat-x 0 bottom;}
+
 body{
     font-family: helvetica, arial, sans-serif;
     background: #efefef;
@@ -6,230 +20,13 @@ body{
 .p2 {
     padding: 2px;
 }
+
 /*
-	form
+	common lib
 */
-form.search{
-	position: absolute;
-	width: 150px;
-	right: 20px;
-	top: 23px;
-}
-.search label{
-	display:none;
-}
-.search input{
-	float: right;
-	width: 70px;
-	padding: 2px 0 3px 5px;
-	border-radius: 10px 0px 10px 0px;
-	font-family: "Source Sans Pro", helvetica, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1em;
-	color: #888;
-	outline: none;
-	-webkit-transition: 2s width;
-}
-.search input:focus{
-	width:140px;
-}
-form.search input{
-	background-color:#fff;
-}
-form.search input::-webkit-input-placeholder{
-	color:#ccc;
-}
 /*
-	nav
+	common component style for nav form etc
 */
-nav.menu{
-	padding: 0;
-	text-align: center;/*ul inline-block*/
-	font-size: .8em;
-}
-nav.menu > ul{
-	display:inline-block;
-	margin: 19px auto;
-}
-nav.menu li{
-	position:relative;
-	float:left;
-	list-style-type:none;
-}
-nav.menu ul li a{
-	display:block; 
-	padding:.25em .8em;
-	background-clip:padding-box;
-	text-align:left;
-	text-decoration:none;
-	font-family:"Source Sans Pro", helvetica, sans-serif;
-	font-style: normal;
-	font-weight:600;
-	font-size:1.2em;
-	color:#fff;
-	-webkit-font-smoothing: antialiased; 
-}
-nav.menu li.choice1 a {
-	background:#f58c21;
-}
-nav.menu li.choice2 a {
-	background:#4eb8ea;
-}
-nav.menu li.choice3 a {
-	background:#d6e636;
-}
-nav.menu li.choice4 a {
-	background:#ee4c98;
-}
-nav.menu li.choice5 a {
-	background:#f58c21;
-}
-nav.menu li:hover > a {
-	color:#555;
-	border-color:#fff;
-	border:0;
-}
-nav.menu li:last-child a  {
-	border-bottom-right-radius:10px;
-}
-nav.menu li:first-child a  {
-	border-top-left-radius:10px;
-}
 /*
-	level2
+	nav form search
 */
-nav.menu li ul{
-	position: absolute;
-	width: 12em;
-	top: 100%;
-	left: 0px;
-	padding:0px;
-	opacity:0; 
-	visibility:hidden;
-}
-.touch nav.menu li ul { /* uses modernizer to only transition opacity of touch devices */	
-	-webkit-transition: 1s opacity; 
-	   -moz-transition: 1s opacity;
-	        transition: 1s opacity; 
-}
-nav.menu li ul { 
-	-webkit-transition: 1s all .2s; 
-	   -moz-transition: 1s all .2s;
-	        transition: 1s all .2s; 
-}
-nav.menu li:hover > ul {
-	opacity:1; 
-	visibility:visible;
-}
-nav.menu li  li{
-	float:none;
-}
-nav.menu li li:last-child a  {
-	border-bottom-left-radius:10px;
-}
-nav.menu li li:first-child a  {
-	border-radius:0;
-}
-/*
-	for no-transitions browsers
-*/
-.no-csstransitions nav.menu li ul { 
-	visibility:visible; /* overrides transitions version */
-	opacity:1;  /* overrides transitions version */
-	display:none; /* hides menu if no css transition capability */
-}
-.no-csstransitions nav.menu li:hover > ul {
-	display:block; /* displays menu when parent hovered */
-}
-@media only screen and (max-width:480px) { /* portrait iPhone */
-	nav.menu ul li a {font-size:.9em;} /* scales menu to fit */
-}
-@media only screen and (max-width:320px) { /* portrait iPhone */
-	nav.menu ul li a {font-size:.8em;} /* scales menu to fit */
-}
-/*
-	form signin
-*/
-form.signin{
-	width:19em; /* overall width of form */
-	float:right;
-	background:#fff;
-	border-radius:10px 0 10px 0;
-	box-shadow: 0 12px 8px -9px #555;
-}
-.signin fieldset {
-	border:0; /* removes default fieldset border */
-	margin:10px 14px;
-}
-.signin legend span{
-	font-family:Lato, helvetica, sans-serif;
-	font-weight:700; font-size:1.3em; line-height:1.1em;
-	color:#4eb8ea;
-	letter-spacing:-.05em;
-}
-.signin section{
-	overflow:hidden; /* encloses the form control and label */
-	padding:.25em 0; /* spacing between form elements */
-}
-.signin section label{
-	font-family:"Source Sans Pro", helvetica, sans-serif;
-	font-weight:400;
-	float:left;
-	width:5em; /* width of label column */
-	margin:.5em .3em 0 0; /* right margin pads text from input */
-	line-height:1.1;
-	color:#555;
-	font-size:1em;
-}
-.signin section input{
-	float:right;
-	width:10.5em; /* width of input column */
-	margin:.2em 0 0 .5em;
-	padding:3px 10px 2px; /* creates space around input text */
-	color:#555;
-	font-size:.8em;
-	outline:none; /* removes default blue focus outline */
-	/*border:1px solid;*/
-	border-radius:10px 0 10px 0;
-	color:#888;
-	/*border-color:#333 #aaa #aaa #333;*/;
-}
-input:-webkit-autofill { /* removes yellow background in webkit */
-    color:#fff !important;
-}
-.signin section input[type=submit]{
-	float:right; /* aligns button at right edge of inputs */
-	width:auto; /* resets width setting from fields */
-	margin:0 2px 3px 0;
-	padding:0px 8px 3px;
-	font-size:1em;
-	font-weight:800;
-	color:#fff;
-	border:none;
-	background-color:#d6e636;
-	box-shadow:1px 1px 2px #888;
-}
-.signin section p{ /* not signed up? text */
-	float:right;
-	clear:both;
-	margin:.2em 0 0;
-	text-align:right;
-	font-size:.8em;
-	line-height:1;
-	color:#555;
-}
-.signin section p a {
-	color:#333;
-}
-.signin section p a:hover{
-	color:#777;
-	text-decoration:none;
-}
-.signin section p.direction.error{
-	display:block;
-	color:#f00;  /* colors direction text red when error class added */
-}
-.signin section p.direction{
-	display:none;;  /* colors direction text red when error class added */
-}
