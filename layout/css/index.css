@@ -1,362 +1,93 @@
-@charset "UTF-8";
-/* CSS Document */
+/*common*/
+.w1000{
+	width: 1000px;
+	margin: 0 auto;
+}
+.a{
+	background-color: #666666;
+}
+/*header*/
+.intro{
+	background-color: #F7F7F7;
+}
+.thum-header{
+	/*宋体*/
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 30px;
+}
+.thum-header-icon{
+	padding-left:18px;
+	font-weight: bold;
+	background: url(../images/icon/collection.jpg) left center no-repeat;
+}
+.thum-header a:hover{
+	color:red;
+}
 
-#wrapper{
-    width: 980px;
-    margin: 0 auto 20px;
+/*logo-search-cart*/
+.logo-search-cart{
+	height: 86px;
+	background-color: #1D7AD9;
 }
-header{
-    background: #fff;
-    position: relative;
-    margin: 10px 0;
-    height: 70px;
-    border-radius: 20px 0 20px 0;
-    box-shadow: 0px 12px 8px -9px #555;
+.content{
+	position: relative;
 }
-header section#title{
-    position: absolute;
-	height:65px;
-	width:300px;
+.content .logo{
+	position: absolute;
+    margin-top: 14px;
+    margin-left: 40px;
 }
-header h1{
-	padding: 9px 12px 0;
-	margin: 0 0 -10px 0;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 2em;
-	line-height: 1;
-	letter-spacing: -.075em;
-	color: #4eb8ea;
+.content .search{
+	width: 100%;
+	height: 100%;
+    text-align: center;
+    padding-top: 22px;
+    font: 16px;
 }
-header h2{
-	font-family: "runda", helvetica, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: .75em;
-	color: #333;
-	padding: 0px 12px;
-	line-height: 1.5;
+.search input{
+	height: 40px;
 }
-/*
-	feature_area
-*/
-section#feature_area{
-	overflow:hidden; /* encloses the floated child elements */
-	margin:16px 0 0; /* space between header and feature area */
-	padding:0 0 10px;
+.search .input{
+	width: 360px;
 }
-/*
-	feature_area article
-*/
-section#feature_area article{
-	float:left;
-	width:66%;
-}
-section#feature_area article .inner{
-	padding:12px; /* space around content */
-	background:#fff;
-	border-radius:20px 0;
-	box-shadow:0 12px 8px -9px #555;
-}
-section#feature_area article a { /* link around h3 headline */
-	text-decoration:none;
-}
-section#feature_area article h4 {  /* blog lead-off date */
-	font-family:"Source Sans Pro", helvetica, sans-serif;
-	font-style:normal;
-	font-weight:400;
-	font-size:1em;
-	color:#f58c21;
-	letter-spacing:-.025em;
-}
-section#feature_area article h3{/* blog lead-off headline */
-	font-family:Lato, helvetica, sans-serif;
-	font-style:normal;
-	font-weight:700;
-	font-size:1.75em;
-	color:#555;
-	margin:0px 0 12px 0px;
-	letter-spacing:-.05em;
-}
-section#feature_area article img{
-	float:left;
-	padding:0 10px 10px 0;
-}
-section#feature_area article#blog_leadoff p { /* body copy of blog lead-off */
-	font-family:"Source Sans Pro", helvetica, sans-serif;
-	font-style: normal;
-	font-weight:400;
-	font-size:1.1em;
-	line-height:1.5em;
-	color:#616161;
-	margin:0 0px;
-	text-align:justify;
-}
-section#feature_area article#blog_leadoff p::first-letter { /* the drop-cap */
-	font-family:Lato, helvetica, sans-serif; 
-	font-style: normal;
-	font-weight:700;
-    font-size:4.5em;  
-    float:left;  
-    margin:.05em .05em 0 0;  
-    line-height:0.6;
-	text-shadow:1px 3px 3px #ccc;
-}
-section#feature_area article#blog_leadoff p::first-line {  /* the first line small caps */
-	font-variant:small-caps;
-	font-size:1.2em;
-}
-/*
-	feature_area aside
-*/
-section#feature_area aside{
-	width:34%;
-	float:right;
-}
-section#feature_area nav{
-	width:19em; /* overall container width */
-	float:right;/* aligns to right edge of section */
-	margin:15px 0 0; /* space above and below */	
-	padding:.6em 0em .75em; /* padding above and below content */		
-	background:#fff;
-	border-radius:10px 0 10px 0;
-	box-shadow: 0 12px 8px -9px #555;
-}
-#feature_area nav h3{
-	margin:0;
-	padding:0 14px 0; /* horizontal space for title */
-	font-family:Lato, helvetica, sans-serif;
-	font-weight:700;	
-	font-size:1.3em;
-	text-align:left;
-	color:#aaa;
-	letter-spacing:-.05em;
-}
-#feature_area nav ul {
-	margin:0em 0 0 20px;
-	padding:0;
-}
-#feature_area nav li{
-	padding:.7em 0 0 2em;
-	position:relative; /* positioning context for bullets */
-	list-style-type:none
-}
-#feature_area nav li:before { /* custom list bullets */
-	content:""; 	/* empty string for unneeded content */
-	position:absolute; /* relative to list items */
-	height:10px; /* size bullet */
-	width:10px;
-	left:12px; /* position bullet */
-	top:12px;
-	border-radius:5px 0 5px 0; /* the bullet shape */
-	background-color:#d6e636; /* bullet color */
-	box-shadow:1px 1px 2px #888;
-}
-#feature_area nav li a {
-	display:block; /* link becomes full-width */
-	text-decoration:none; /* remove default underline */
-	font-size:.9em;
-	color:#616161;
-}
-#feature_area nav li a:hover {
-	color:#000;
-}
-/*
-	book_area
-*/
-section#book_area{
-	clear:both;
-	border-radius:20px 0px 20px 0px;
-	border:1px solid #f58c21;	
-	margin:8px 0 16px; /* separation from feature area and footer */
-	overflow:hidden;  /*encloses floated article elements */
-}
-#book_area  article{
-	float:left;
-	width:25%;
-	padding:10px 0;
-	background:none;
-}
-#book_area article .inner { /* wrapper around books */
-	position:relative; /* positioning context for popups */
-	width:140px; 
-	margin:0 auto;
-}
-#book_area  .inner h3 { /* rotated type */
-	position:absolute;
-	width:160px;
-	left:112%; /* positions type on right side of book */
-	bottom:5px;
-	margin:0;
-	-webkit-transform:rotate(-90deg);
-	-webkit-transform-origin:left bottom;
-	   -moz-transform:rotate(-90deg);
-	   -moz-transform-origin:left bottom; /* turns the type - needs VSPs */
-		-ms-transform:rotate(-90deg);
-	   	-ms-transform-origin:left bottom; /* turns the type - needs VSPs */
-		    transform:rotate(-90deg); /* sets rotation point at start of type */
-		    transform-origin:left bottom;
-	color:#ccc;
-	font-size:1.4em;
-	font-family:Lato, helvetica, sans-serif;
-	font-style:normal;
-	font-weight:900;
-	text-align:left;
-}
-#book_area article.right:last-child h3 {
-	left:85%; /* different offset for narrower 4th book cover */
-}
-#book_area article img {
-	box-shadow: 0 12px 8px -9px #555; /* shadow under book */
-}
-/* start of the pop-ups */
-#book_area article aside {
-	display:none; /* hides popups */
-	position:absolute; /* relative to images */
-	z-index:2;
-	width:200px; /* width of popup */
-	background:#fff;
-	padding:10px 2px 5px; /* space around popup content */
-	border:2px solid #f58c21;
-	border-radius:10px 0px 10px 0px;
-	box-shadow:4px 4px 16px #555; 
-	color:#555;
-	font-family:"Source Sans Pro", helvetica, sans-serif;
-	font-size:.8em;
-	line-height:1.5em;
-}
-#book_area article:hover aside {
-	display:block; /* shows popup */
-}
-#book_area article aside ol{
-	padding:0;
-}
-#book_area article aside li {
-	padding:.25em 0 .75em 1em;
-	list-style-type:none;
-	line-height:1.2em;
-}
-#book_area article aside li a {
-	text-decoration:none;
-	font-size:1.2em;
-	color:#616161;
-}
-#book_area article aside li a:hover{
-	color:#333;
-}
-#book_area article.left aside{
-	left:84%; top:14px; /* positions popup on right side of image */
-}
-#book_area article.right aside {
-	right:84%; top:14px;	/* positions popup on left side of image */
-}
-#book_area article aside:after { /* red triangle box*/
-	content:""; /* some content required - using empty text string */
-	position:absolute; /* relative to popup */
-	top:33px;
-	border:12px solid;
-	height:0px; width:0px; /* collapses box to create triangle */
-	}	
-#book_area article.left aside:after { /* create the triangle by making three sides transparent */
-	right:100%;
-	border-color:transparent #f58c21 transparent transparent; 
-	}
-#book_area article.right aside:after { /* create the triangle by making three sides transparent */
-	left:100%;
-	border-color:transparent transparent transparent #f58c21;
-	}
-#book_area article aside:before { /* red triangle box*/
-	content:""; /* some content required - using empty text string */
-	position:absolute; /* relative to popup */
-	border:8px solid;
-	height:0px; width:0px; /* collapses box to create triangle */
-	z-index:100;
-	top:37px;
-	}
-#book_area article.left aside:before { /* create the triangle by making three sides transparent */
-	right:100%; 
-	border-color:transparent white transparent transparent; 
-	}
-#book_area article.right aside:before { /* create the triangle by making three sides transparent */
-	left:100%;
-	border-color:transparent transparent transparent white;
-	}
-/*
-	footer 
-*/
-footer {
-	padding:.5em 0 .35em 0; /* space above and below content */
-	text-align:center; /* centers content */
-	border-radius:10px 0px 10px 0px; 
-	background:#fff;
-	box-shadow:0 12px 8px -9px #555;
-}
-footer p { /* text line styling */
-	font-family:'Source Sans Pro';
-	font-weight:400;
-	font-size:.85em;
-	letter-spacing:-.05em;
-	color:#555;
-}
-footer p a { /* link in text line */
-	font-family:'Source Sans Pro';
-	font-style:italic;
-	font-weight:700;
-	font-size:1em;
-	color:#4eb8ea;
-	text-decoration:none;
-}
-footer p a:hover{
-	color:#777;
-}
-footer ul { /* list of links */
-	display:inline-block; /* shrink-wraps list */
-	margin:4px 0 0;
-}
-footer li {
-	list-style-type:none; /* removes default bullets */
-	float:left; /* makes list horizontal */
-	font-family:"Source Sans Pro";
-	font-weight:400;
-	font-size:.85em;	
-}
-footer li + li a {
-	border-left:1px solid #ccc; /* dividers between links */
-}
-footer li a {
-	text-decoration:none; /* removes default underlining off links */
-	color:#aaa;
-	padding:0 5px; /* space between links */
-}
-footer a:hover {
-	color:#777;
+.search .subtn{
+	width: 60px;
+	height: 47px;
+	margin-left: -5px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content .cart{
+	position: absolute;
+    right: 50px;
+    top: 31px;
+    background-color: #FF8800;
+    line-height: 36px;
+}
+.cart .cart-icon{
+}
+.cart-icon .icon{
+	margin: 0px 12px;
+}
+.cart .cart-msg{
+}
+/*nav*/
+.nav{
+	background-color: #1369C0;
+	font-family: '微软雅黑';
+	font-size: 14px;
+	line-height: 36px;
+}
+/*nav structor*/
+.nav .categary{
+	float: left;
+	background: url(../images/icon/down-arraon.jpg) right center no-repeat;
+	padding-right: 14px;
+}
+.nav .nav-items{
+	float: left;
+}
+.item{
+	float: left;
+}

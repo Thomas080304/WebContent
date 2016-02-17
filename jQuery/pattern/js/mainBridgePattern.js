@@ -5,7 +5,7 @@ require.config({
     baseUrl:"../../",
     paths:{
         "jquery":"lib/jQuery/jquery-1.11.3",
-        "XHRUtil":"web/jQuery/utils/XHRUtil"
+        "XHRUtil":"jQuery/pattern/utils/XHRUtil"
     }
 });
 define([
@@ -33,6 +33,9 @@ define([
             var a = [];
             for(var i = 0,len = this.length; i < len; i++){
                 if(!fn.call(scope,this[i],i,this)){
+                //利用函数的返回值不同来
+                //如果是自身则返回undefined，
+                //如果不是自己则返回一个函数，函数也是对象
                     continue;
                 }
                 a.push(this[i]);

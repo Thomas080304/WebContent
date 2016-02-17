@@ -1,6 +1,6 @@
 
 
-body{margin:0; /*font-size:84%;*/ background:#eee; color:#333; font-family:Verdana, Geneva, sans-serif;}
+body{margin:0; font-size:62.5%; background:#eee; color:#333; font-family:Verdana, Geneva, sans-serif;}
 ul,ol,form,h1,h2,h3,h4,h5,h6,p{padding:0; margin:0; list-style-type:none;}
 a{color:#34538b; text-decoration: none;}
 .l{float:left;}.r{float:right;}.cl{clear:both;}img{border:0;}
@@ -14,14 +14,6 @@ a{color:#34538b; text-decoration: none;}
 .dn{display:none;}.db{display:block;}.dib{display:inline-block;}.di{display:inline;}
 .dot{background:url(http://s1.95171.cn/b/img/dot.png) repeat-x 0 bottom;}
 
-body{
-    font-family: helvetica, arial, sans-serif;
-    background: #efefef;
-    margin: 0 0;
-}
-.p2 {
-    padding: 2px;
-}
 
 /*
 	common lib

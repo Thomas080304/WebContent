@@ -5,14 +5,14 @@ require.config({
     baseUrl:"../../",
     paths:{
         "jquery":"lib/jQuery/jquery-1.11.3",
-        "EventUtil":"web/jQuery/utils/EventUtil",
-        "mainBridgePattern":"web/jQuery/js/mainBridgePattern"
+        "EventUtil":"jQuery/pattern/utils/EventUtil",
+        "mainBridgePattern":"jQuery/pattern/js/mainBridgePattern"
     }
 });
 define([
     "jquery",
     "EventUtil",
-    "../../../web/jQuery/js/mainBridgePattern"
+    "mainBridgePattern"
 ],function($,EventUtil,DED){
     var q = new DED.Queue();
     q.setRetryCount(3);
@@ -27,6 +27,11 @@ define([
         requests.shift();
         queue.innerHTML = requests.toString();
     });
+    var tt = function(){
+        console.info("test");
+    };
+    q.onFailure.subscribe(tt);
+    q.onFailure.unsubscribe(tt);
     q.onFailure.subscribe(function(){
         requests.innerHTML += '<span style="color:#ff0000;">Connection Failure</span>';
     });
