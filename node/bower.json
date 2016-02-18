@@ -1,0 +1,25 @@
+{
+  "name": "imooc3",
+  "authors": [
+    "Thomas996696 <583547574@qq.com>"
+  ],
+  "description": "not for mvc",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "imooc3"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
