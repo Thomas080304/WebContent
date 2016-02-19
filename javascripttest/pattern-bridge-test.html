@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Object-superType</title>
+    <script type="text/javascript" src="./pattern-bridge-test.js"></script>
+    <script type="text/javascript" src="../jQuery/js/EventUtil.js"></script>
+    <script type="text/javascript">
+        EventUtil.addHandler(window,"load",function(){
+            var q = new DED.Queue();
+            q.setRetryCount(3);
+            q.setTimeout(1000);
+            var item = document.getElementById("items");
+            var result = document.getElementById("results");
+            var queue = document.getElementById("queue-items");
+            var add = document.getElementById("adds");
+            var requests = [];
+            q.onFlush.subscribe(function(data){
+                requests.innerHTML = data;
+                requests.shift();
+                queue.innerHTML = requests.toString();
+            });
+            q.onFailure.subscribe(function(){
+                requests.innerHTML += '<span style="color:#ff0000;">Connection Failure</span>';
+            });
+            q.onComplete.subscribe(function(){
+                requests.innerHTML += '<span style="color:#008000;">Connection Failure</span>';
+            });
+            var actionDispatcher = function(element){
+                switch(element){
+                    case "flush":
+                        q.flush();
+                        break;
+                    case "dequeue":
+                        q.dequeue();
+                        requests.pop();
+                        queue.innerHTML = requests.toString();
+                        break;
+                    case "pause":
+                        q.pause();
+                        break;
+                    case "clear":
+                        q.clear();
+                        requests = [];
+                        queue.innerHTML = "";
+                        break;
+                }
+            };
+            EventUtil.addHandler(item,"click",function(){
+                var e = EventUtil.getEvent();
+                var src = EventUtil.getTarget(e);
+                EventUtil.preventDefault(e);
+                actionDispatcher(src.id);
+            });
+            var addRequst = function(request){
+                var data = request.split("-")[1];
+                q.add({
+                    methhod:"GET",
+                    uri:"www.baidu.com",
+                    param:null
+                });
+                requests.push(data);
+                queue.innerHTML = requests.toString();
+            };
+            EventUtil.addHandler(add,"click",function(e){
+                var e = EventUtil.getEvent();
+                var src = EventUtil.getTarget(e);
+                EventUtil.preventDefault(e);
+                addRequst(src.id);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="doc">
+        <div id="queue-items"></div>
+        <h1>Add request to queue</h1>
+        <ul id="adds">
+            <li><a href="#" id="action-01">action-01</a></li>
+            <li><a href="#" id="action-02">action-02</a></li>
+            <li><a href="#" id="action-03">action-03</a></li>
+            <li><a href="#" id="action-04">action-04</a></li>
+        </ul>
+        <h2>other queue actions</h2>
+        <ul id="items">
+            <li><a href="#" id="flush">flush</a></li>
+            <li><a href="#" id="dequeue">dequeue</a></li>
+            <li><a href="#" id="pause">pause</a></li>
+            <li><a href="#" id="clear">clear</a></li>
+        </ul>
+        <div id="results-area">
+            <h1>results:</h1>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>
