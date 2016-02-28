@@ -1,0 +1,64 @@
+body{
+	background-image: url("");
+	background-repeat: repeat-x;
+	background-color: #eee;
+}
+
+/*
+	logo
+	<div id= "branding"></div>
+*/
+#branding{
+	width: 700px;
+	height: 200px;
+	background-image: url("/img/branding.gif");
+	background-repeat: no-repeat;
+}
+
+/*
+	ul icon
+*/
+h1{
+	padding-left: 20px;
+	background-image: url("img/bullet.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+h2{
+	padding-left: 20px;
+	background-image: url("img/bullet.gif");
+	background-repeat: no-repeat;
+	background-position: 0 50%;/*similar*/
+}
+h3{
+	padding-left: 20px;
+	background-image: url("img/bullet.gif");
+	background-repeat: no-repeat;
+	background-position: 0 50px;/*angular*/
+}
+h4{
+	padding-left: 20px;
+	background: url("img/bullet.gif") no-repeat left center #ccc;
+}
+
+/*
+	border
+	<div class="box">
+		<h2>Headline</h2>
+		<p>Content</p>
+	</div>
+*/
+.box{
+	width: 418px;
+	background: url("img/bottom.gif") no-repeat left bottom #effce8;
+	padding-bottom: 1px;
+}
+.box h2{
+	background: url("img/top/gif") no-repeat left top;
+	margin-top: 0;
+	padding-right: 20px 20px 0px 20px;
+}
+.box p{
+	padding:0 20px;
+}

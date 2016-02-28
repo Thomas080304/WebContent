@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NgShowcaseApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>
+        <style type="text/css">
+           body {
+                font: 75%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+            }
+            .clear {
+                clear: both;
+            }
+            table {
+                border-collapse: collapse;
+                width: 50em;
+                border: 1px solid #666;
+            }
+            caption {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin: 1em 0;
+            }
+            col {
+              border-right: 1px solid #ccc;
+            }
+            col#albumCol {
+              border: none;
+            }
+            thead {
+                background: #ccc url(img/bar.gif) repeat-x left center;
+                border-top: 1px solid #a5a5a5;
+                border-bottom: 1px solid #a5a5a5;
+            }
+            th {
+                font-weight: normal;
+                text-align: left;
+            }
+            #playlistPosHead {
+                text-indent: -1000em;
+            }
+            th, td {
+                padding: 0.1em 1em;
+            }
+            .odd {
+                background-color:#edf5ff;
+            }
+            tr:hover {
+                background-color:#3d80df;
+                color: #fff;
+            }
+
+            thead tr:hover {
+                background-color: transparent;
+                color: inherit;
+            }
+        </style>
+    </head>
+    <body id="css-zen-garden">
+        <table cellspacing="0" id="playlistTable" summary="Top 15 songs played. Top artitst include Coldplay, Yeah Yeah Yeahs, Snow Patrol, Deeper Water, Kings of Leon, Embrace, Oasis, Franz Ferdinand, Jet, The Bees, Blue States, Kaiser Chiefs and Athlete.">
+            <caption>Top 15 Playlist</caption>
+
+            <colgroup>
+            <col id="PlaylistCol" />
+            <col id="trackCol" />
+            <col id="artistCol" />
+            <col id="albumCol" />
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th id="playlistPosHead" scope="col">Playlist Position</th>
+                    <th scope="col">Track Name</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Album</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="odd">
+                    <td>1</td>
+                    <td>Hide You</td>
+                    <td>Kosheen</td>
+                    <td>Resist</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>.38.45</td>
+                    <td>Thievery Corporation</td>
+                    <td>Sounds From the Thievery Hi-Fi</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>3</td>
+                    <td>Fix You</td>
+                    <td>Coldplay</td>
+                    <td>X&amp;Y</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Maps</td>
+                    <td>Yeah Yeah Yeahs</td>
+                    <td>Fever To Tell</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>5</td>
+                    <td>Ask me how I am</td>
+                    <td>Snow Patrol</td>
+                    <td>Final Straw</td>
+                </tr>
+            </tbody>
+
+
+</table>
+    </body>
+</html>
