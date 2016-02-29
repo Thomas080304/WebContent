@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NgShowcaseApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>
+        <style type="text/css">
+        	div{
+        		position:absolute;
+        		top:50%;left:50%;
+        		overflow:hidden;
+        		width:300px;
+        		height:150px;
+        		margin:-75px 0 0 -150px;
+        		border:3px solid #eee;
+        		background:#e0e0e0;
+        	}
+			span{
+				opacity:0;
+				display:block;
+				height:50px;
+				font:bold 14px/50px Georgia;
+			}
+			.a1{
+				-moz-transform:translate(60px);
+            	-webkit-transform:translate(60px);
+            	transform:translate(60px);
+
+            	-webkit-animation:animations 2s ease-out forwards;
+				-moz-animations:animations 2s ease-out forwards;
+				animations:animations 2s ease-out forwards;
+			}
+			@-webkit-keyframes animations{
+			 	0%{-webkit-transform:translate(0);opacity:0;}
+			    50%{-webkit-transform:translate(30px);opacity:1;}
+			    70%{-webkit-transform:translate(35px);opacity:1;}
+			    100%{-webkit-transform:translate(60px);opacity:0;}
+			}
+
+        </style>
+    </head>
+    <body id="css-zen-garden">
+        <div>
+		    <span class="a1">CSS3 Animations</span>
+		    <span class="a2">CSS3 Animations</span>
+		    <span class="a3">CSS3 Animations</span>
+		</div>
+		
+    </body>
+</html>

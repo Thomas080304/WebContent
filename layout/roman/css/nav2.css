@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+/*------------------------------
+	nav.menu li{
+		float:left;//包裹性
+		position:relative;
+	}
+	nav.menu li a{
+		display:block;
+		padding:.25em .8em;
+	}
+	nav.menu li ul{
+		position:absolute;
+	}
+	nav.menu li li{
+		float:none;//包裹性
+	}
+
+*/
+nav.menu{
+	margin: 19px 0;
+	padding:0;
+	font-size:.8em;
+	text-align:center; 
+}
+nav.menu > ul{
+	display:inline-block;
+}
+nav.menu li{
+	float: left;
+	list-style-type:none;
+	position:relative;
+}
+nav.menu ul a{
+	display: block;
+	padding:.25em .8em;
+	font-family:"Source Sans Pro", helvetica, sans-serif;
+	font-style: normal;
+	font-weight:600;
+	font-size:1.2em;
+	text-align:left;  
+	color:#fff;
+	text-decoration:none; /* removes link underlining */
+	-webkit-font-smoothing: antialiased; /* prevents pop of anti-alias change at end of opacity transition */
+}
+
+nav.menu li.choice1 a {
+	background:#f58c21;
+	}
+nav.menu li.choice2 a {
+	background:#4eb8ea;
+	}
+nav.menu li.choice3 a {
+	background:#d6e636;
+	}
+nav.menu li.choice4 a {
+	background:#ee4c98;
+	}
+nav.menu li.choice5 a {
+	background:#f58c21;
+	}
+nav.menu li:hover > a {
+	color:#555;
+	border-color:#fff;
+	border:0;
+}
+
+
+nav.menu li ul {
+	position: absolute;
+	width: 12em;
+	left: -999em;
+}
+nav.menu li:hover ul{
+	left: auto;
+}
+nav.menu li li {
+	float:none; /* kills inherited float - makes list stack */
+}
