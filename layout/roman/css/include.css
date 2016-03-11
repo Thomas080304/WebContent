@@ -2,14 +2,4 @@
 @import "nav.css";
 @import "search.css";
 @import "form.css";
-
-
-body{
-	font-family: "myriad-pro", helvetica, sans-serif;
-	background: #efefef;
-	margin: 0;
-}
-#wrapper{
-	width: 980px;
-	margin: 0 auto 20px;
-}
+@import "response.css";

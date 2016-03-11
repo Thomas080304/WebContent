@@ -1,0 +1,253 @@
+/*---------------------------------
+	@group detail support common
+*/
+body{
+	background: #F0F0F0;
+}
+.detail-show{
+	background: #fff;
+	border: 1px solid #CCCCCC;
+}
+.detail-show-left{
+	float: left;
+	width: 310px;
+	
+}
+.detail-show-right{
+	float: right;
+	width: 688px;
+}
+.detail-show-right-inner{
+	border-left: 1px solid #ccc;/*宽度分离额外的添加了inner*/
+	padding:10px;
+}
+.bread-nav{
+	font-size: 0;
+	font-family: "宋体";
+	line-height: 17px;
+	margin-top: 18px;
+	margin-bottom: 13px;
+}
+.bread-nav a,
+.bread-nav span,
+.bread-nav em,
+.bread-nav strong{
+	font-style: normal;
+	font-size: 12px;
+}
+.detail-show-img{
+    margin-top: 20px;
+    text-align: center;
+}
+.detail-show-thumb-wrapper{
+	width: 266px;
+	margin: 20px auto;
+}
+.detail-show-thumb{
+	padding-left: 1px;/*居中对齐一像素不差*/
+}
+.detail-thumb-item{
+	float: left;
+	border: 1px solid #ccc;
+	margin-left: -1px;/*border-collapse*/
+	vertical-align: middle;
+	line-height: 0;
+}
+.thumb-active{
+	border-color: #317EE7;
+	position: relative;/*显示边框*/
+}
+
+
+.show-detail-title{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+	padding: 13px 0px 13px 15px;
+}
+dl,dt,dd{
+	margin:0;
+	padding: 0;
+}
+.show-price-reduce{
+	line-height: 34px;
+}
+.price-reduce-title{
+	float: left;
+	padding-left: 15px;
+	font-family: "新宋体";
+	font-style: normal;
+	font-size: 12px;
+	line-height: 34px;
+}
+.price-reduce{
+	margin-left: 75px;
+	line-height: 34px;
+	font-family: "新宋体";
+	font-size: 12px;
+}
+.price{
+	color: red;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	line-height: 22px;
+}
+.money-icon{
+	font-style: normal;
+	font-size: 12px;
+}
+.reduce-icon{
+	display: inline-block;
+	width: 55px;
+	background: url("../images/icon/seals-icon.gif") no-repeat left center;
+	text-indent: 15px;
+	line-height: 18px;
+	padding-right: 5px;
+	color: #fff;
+}
+.show-self{
+	background: #F2F2F2;
+	padding: 20px 0px;
+	margin: 17px 0px;
+	/*font-size: 0px;*/
+}
+.customer-option{
+	float: left;
+	padding: 2px;
+	background-color: #fff;
+	color: #666666;
+	border: 1px solid #CCCCCC;
+	margin-right: 20px;
+	margin: 10px 20px 10px 0px;
+}
+.customer-option-active{
+	border-color: #317EE7;
+	color: #000;
+}
+.address-options{
+	height: 24px;
+}
+.customer-self-color{
+	padding: 5px 33px;
+}
+.customer-color-title{
+	line-height: 66px;
+}
+.customer-self-size{
+	padding: 2px 10px;
+}
+.customer-size-title{
+	line-height: 124px;
+}
+.number-dailog{
+	width: 84px;
+	height: 34px;
+	float: left;
+	margin-right: 5px;
+	text-align: center;
+}
+.number-dailog-inner{
+	border: 1px solid #B2B2B2;
+	background: #fff;
+}
+.number-reduce,
+.number-increace{
+	display: inline-block;
+	width: 15px;
+	/*outline: 1px solid red;*/
+	text-align: center;
+}
+.number-reduce{
+	float: left;
+	border-right: 1px solid #B2B2B2;
+}
+.number-increace{
+	float: right;
+	border-left: 1px solid #B2B2B2;
+}
+.customer-selected{
+	font-family: "宋体";
+	font-size: 12px;
+	text-indent: 15px;	
+	font-weight: bold;
+}
+.selected-content{
+	color: #0479CA;
+}
+.customer-alert{
+	font-family: "宋体";
+	font-size: 12px;
+	text-indent: 15px;
+	color: #999999;
+}
+.add-cart-purchase{
+	margin: 10px 0px 10px 15px;
+}
+.add-common{
+	display: inline-block;
+    width: 184px;
+    line-height: 48px;
+    text-indent: 64px;
+    color: #fff;
+    background: url("../images/icon/cart.gif") no-repeat 20% center #F98700;
+}
+.add-wrapper{
+	float: left;
+	padding: 20px 0px;
+	border-left: 1px solid #E5E5E5;
+}
+.add-cart{
+	margin-left: 75px;
+	margin-right: 20px;
+}
+.add-purchase{
+	margin-left: 20px;
+}
+.add-wrapper-self{
+	border-left: none;
+}
+/*---------------------------------------------
+	detail support right
+
+dl,dt,dd{
+	margin:0;
+	padding: 0;
+}
+.show-price-reduce{
+	font-family: "新宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 24px;
+	margin:18px 0px 15px;
+}
+.show-detail-title{
+	margin-left: 25px;
+	padding-top: 28px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.price-reduce-title{
+	float: left;
+	text-indent: 14px;
+}
+.price-reduce{
+	margin-left: 73px;
+}
+.reduce-icon{
+	display: inline-block;
+	width: 55px;
+	background: url("../images/icon/seals-icon.gif") no-repeat left center;
+	text-indent: 15px;
+	line-height: 18px;
+	padding-right: 5px;
+}
+.show-self{
+	background: #F2F2F2;
+}
+.customer-option{
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+}*/
