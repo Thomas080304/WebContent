@@ -7,6 +7,7 @@ body{
 .detail-show{
 	background: #fff;
 	border: 1px solid #CCCCCC;
+	margin-bottom: 20px;
 }
 .detail-show-left{
 	float: left;
@@ -207,47 +208,209 @@ dl,dt,dd{
 .add-wrapper-self{
 	border-left: none;
 }
-/*---------------------------------------------
-	detail support right
 
-dl,dt,dd{
-	margin:0;
-	padding: 0;
+
+/*----------------------------------------
+	@group goods
+*/
+.detail-refer{
+	margin-top: 20px;
 }
-.show-price-reduce{
-	font-family: "新宋体";
-	font-size: 12px;
-	font-style: normal;
-	line-height: 24px;
-	margin:18px 0px 15px;
-}
-.show-detail-title{
-	margin-left: 25px;
-	padding-top: 28px;
-	font-size: 16px;
-	line-height: 22px;
-}
-.price-reduce-title{
+.refer-wrapper-left{
 	float: left;
-	text-indent: 14px;
+	width: 190px;
 }
-.price-reduce{
-	margin-left: 73px;
+.refer-wrapper-right{
+	float: right;
+	width: 810px;
 }
-.reduce-icon{
+.refer-wrapper-right-inner{
+	background: #fff;
+	margin-left: 23px;
+}
+/*-------------------------------
+	同价位
+*/
+.same-common-wrapper{
+	background: #fff;
+	margin-bottom: 20px;
+}
+.same-common{
+	font: 12px/18px "新宋体";
+	color: #999999;
+	padding: 0px 16px;
+	border: 1px solid #ccc;
+	margin-top: -1px;
+}
+.same-item{
+	text-align: center;
+	padding: 20px 0px 40px;
+}
+.same-info{
+	margin-top: 12px;
+}
+.same-price{
+	text-align: left;
+	font-family: "微软雅黑";
+	color: #E63F3F;
+}
+.same-title{
+	text-indent: 13px;
+    border: 1px solid #ccc;
+    font: bold 14px/34px "新宋体";
+    height: 36px;
+}
+.same-first{
+	border-top:3px solid #1D86CF;
+}
+/*--------------------------
+	商品介绍 商品评价
+*/
+.refer-tab-items{
+	border: 1px solid #ccc;
+	height: 40px;
+	background: url("../images/tab-bg.gif") left top repeat-x;
+	padding-left: 1px;
+}
+.refer-tab-item{
+	float: left;
+	display: block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font: 14px/40px "宋体";
+}
+.tab-first-self{
+	border-right: 1px solid #ccc;
+	margin-left: -1px;
+}
+.tab-active{
+	background: #0479CA;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+}
+.tab-icon{
 	display: inline-block;
-	width: 55px;
-	background: url("../images/icon/seals-icon.gif") no-repeat left center;
-	text-indent: 15px;
-	line-height: 18px;
-	padding-right: 5px;
+	width: 20px;
+	height: 18px;
+	text-align: center;
+	margin-right: 20px;
+	vertical-align: middle;
 }
-.show-self{
+.tab-info{
+	background: url("../images/icon/tab-info.gif") no-repeat left top;
+}
+.tab-talk{
+	background: url("../images/icon/tab-talk.gif") no-repeat left top;
+}
+/*-----------------------
+	tab内容
+*/
+.tab-content{
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.content-title-common{
+	float: left;
+}
+.contet-common{
+	display: table-cell;
+	*display: inline-block;
+	width: 9999px;
+}
+.content-common-item{
+	float: left;
+}
+.content-content-common{
+	margin-top: 20px;
+}
+.tab-content-wrapper{
+	font-family: "新宋体";
+}
+.tab-gap70{
+	margin-bottom: 70px;
+}
+.content-title{
+	font: bold 14px/34px "新宋体";
+	text-indent: 18px;
+	padding: 13px 0px;
+}
+.content-title-self{
+	font: 18px/25px "微软雅黑";
+	margin-right: 10px;
+}
+.score{
+	font-size: 50px;
+	line-height: 50px;
+	color: #FF8F00;
+	padding-left: 8px;
+}
+.content-items-self{
+	width: 480px;
+	background: #BDBDBD;
+	color: #fff;
+}
+.content-item-self{
+	padding: 0px 25px;
+	font-size: 12px;
+	line-height: 19px;
+}
+.customer-score{
+	font-size: 12px;
+	line-height: 25px;
+	color: #65657D;
+	margin-top: 8px;
+}
+.score-wrapper{
+	position: relative;
+}
+.score-icon{
+	position: absolute;
+	left: 420px;
+	top: -20px;
+}
+.middle-header-left{
+	float: left;
+	margin-left: 20px;
+}
+.middle-header-right{
+	float: right;
+	margin-right: 20px;
+}
+.middle-new{
+	position: absolute;
+	right: 0;
+	top: -20px;
+}
+.middle-header-left li{
+	margin-right: 40px;
+}
+.middle-head-active{
+	color: #317EE7;
+	border-bottom: 1px solid #317EE7;
+}
+.middle-wrapper{
 	background: #F2F2F2;
 }
-.customer-option{
-	display: inline-block;
-	background: #fff;
-	border: 1px solid #CCCCCC;
-	padding: 2px;
-}*/
+.mid-a-item{
+	display: block;
+	font: 12px/32px "新宋体";
+	color: #000;
+}
+.mid-active{
+	border-bottom: 3px solid #317EE7;
+}
+.mid-active .mid-a-item{
+	color: #317EE7;
+}
+.mid-sort-item{
+	font: 12px/32px "宋体";
+	color: #000;
+	padding-right: 15px;
+	background: url("../images/icon/sort-down.gif") no-repeat 90% center;
+}
+.mid-sort-left{
+	border-right: 1px solid #CDCDCD;
+	margin-right: 10px;
+}
