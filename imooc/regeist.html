@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NgShowcaseApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>
+        <!--你自己的样式文件 --> 
+        <link href="../lib/bootstrap-lib/normalize.css" rel="stylesheet">
+        <link href="../lib/bootstrap-lib/common.css" rel="stylesheet">
+        <link href="css/include.css" rel="stylesheet">
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="../../lib/bootstrap-lib/html5shiv.js"></script>
+        <script src="../../lib/bootstrap-lib/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body id="css-zen-garden" class="reg-background">
+        
+    		<div class="page-wrapper reg-comm-w">
+                <section id="reg-header">
+                    <img class="reg-logo" src="images/icon/reg-logo.gif" />
+                    <h1 class="reg-wel">欢迎注册</h1>
+                </section>
+                <div class="reg-wrapper">
+                    <form id="regform" action="#" method="post" onsubmit="return false">
+                        <section class="reg-content">
+                            <label for="account">
+                                <i class="reg-required">*</i>
+                                登录邮箱
+                            </label>
+                            <div class="reg-cell">
+                                <input id="account" type="email" />
+                                <span class="reg-remark">邮箱格式不准确（演示）</span>
+                            </div>
+                        </section>
+                        <section class="reg-content">
+                             <label for="set-pwd" class="reg-label">
+                                <i class="reg-required">*</i>
+                                 登录密码
+                            </label>
+                            <div class="reg-cell">
+                                <input id="set-pwd" type="password" />
+                                <span class="reg-remark">请输入6-16位密码，区分大小写，不能使用空格</span>
+                            </div>
+                        </section>
+                        <section class="reg-content">
+                             <label for="confirm-pwd">
+                                <i class="reg-required">*</i>
+                                 用户昵称
+                            </label>
+                            <div class="reg-cell">
+                                <input id="confirm-pwd" type="text" />
+                            </div>
+                        </section>
+                        <section class="reg-content">
+                             <label for="confirm-pwd">
+                                 手机号码
+                            </label>
+                            <div class="reg-cell">
+                                <input id="confirm-pwd" type="tel" />
+                            </div>
+                        </section>
+                         <section class="reg-content">
+                             <label for="confirm-pwd">
+                                <i class="reg-required">*</i>
+                                 验 证 码
+                            </label>
+                            <div class="reg-cell">
+                                <input id="confirm-pwd" type="text" /><img src="http://img.mukewang.com/545308540001678401500040.jpg">
+                            </div>
+                        </section>
+                        <section class="reg-content">
+                            <label for="confirm-pwd"></label>
+                            
+                            <div class="reg-cell">
+                                <input type="checkbox" checked />
+                                <label>我已阅读并同意<a href="#">慕课协议</a></label>
+                                <p><a href="javascript:">立即注册</a></p>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+    		</div>
+
+    		<aside class="sidebar" role="complementary">
+    			
+    		</aside>
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../lib/jQuery/jquery-1.11.3.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../lib/bootstrap-lib/js/bootstrap.js"></script>
+    </body>
+</html>

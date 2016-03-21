@@ -1,0 +1,47 @@
+.reg-background{
+	background: url("../images/reg-bg.gif") repeat-x left top #fff;
+}
+/*-----------------------------------------------------------
+	reg common
+*/
+.reg-comm-w{
+	width: 630px;
+	margin:0 auto;
+}
+.reg-content{
+	margin-bottom: 30px;
+}
+.reg-required{
+	position: absolute;
+	margin-right: -1em;
+	color: red;
+}
+.reg-remark{
+	position: absolute;
+}
+.reg-label{
+	float: left;
+	width: 70px;
+}
+/*---------------------------------------------------------
+*/
+.reg-content{
+	overflow: hidden;
+}
+.reg-wel{
+	line-height: 86px;
+	text-indent: 198px;
+}
+.reg-logo{
+	position: absolute;
+	margin-left: 61px;
+	margin-top: 14px;
+}
+.reg-wrapper{
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	height: 578px;
+	text-align: center;
+	padding: 69px 0px 56px;
+}
+

@@ -414,3 +414,14 @@ dl,dt,dd{
 	border-right: 1px solid #CDCDCD;
 	margin-right: 10px;
 }
+.customer-left{
+	margin-left: 40px;
+	margin-right: 70px;
+}
+.customer-star{
+	float: left;
+	width: 15px;
+	height: 14px;
+	background: url("../images/icon/star-icon.gif") no-repeat center center;
+}
+
