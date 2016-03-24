@@ -25,12 +25,12 @@
                 <div class="reg-wrapper">
                     <form id="regform" action="#" method="post" onsubmit="return false">
                         <section class="reg-content">
-                            <label for="account">
+                            <label for="account" class="reg-label">
                                 <i class="reg-required">*</i>
                                 登录邮箱
                             </label>
                             <div class="reg-cell">
-                                <input id="account" type="email" />
+                                <input class="reg-input" id="account" type="email" />
                                 <span class="reg-remark">邮箱格式不准确（演示）</span>
                             </div>
                         </section>
@@ -40,41 +40,41 @@
                                  登录密码
                             </label>
                             <div class="reg-cell">
-                                <input id="set-pwd" type="password" />
+                                <input class="reg-input" id="set-pwd" type="password" />
                                 <span class="reg-remark">请输入6-16位密码，区分大小写，不能使用空格</span>
                             </div>
                         </section>
                         <section class="reg-content">
-                             <label for="confirm-pwd">
+                             <label for="reg-name" class="reg-label">
                                 <i class="reg-required">*</i>
                                  用户昵称
                             </label>
                             <div class="reg-cell">
-                                <input id="confirm-pwd" type="text" />
+                                <input class="reg-input" id="reg-name" type="text" />
                             </div>
                         </section>
                         <section class="reg-content">
-                             <label for="confirm-pwd">
+                             <label for="reg-phone" class="reg-label">
                                  手机号码
                             </label>
                             <div class="reg-cell">
-                                <input id="confirm-pwd" type="tel" />
+                                <input class="reg-input" id="reg-phone" type="tel" />
                             </div>
                         </section>
-                         <section class="reg-content">
-                             <label for="confirm-pwd">
+                        <section class="reg-content">
+                             <label for="reg-sec" class="reg-label">
                                 <i class="reg-required">*</i>
-                                 验 证 码
+                                  验 证 码
                             </label>
                             <div class="reg-cell">
-                                <input id="confirm-pwd" type="text" /><img src="http://img.mukewang.com/545308540001678401500040.jpg">
+                                <input class="reg-input" id="reg-sec" type="text" />
+                                <img class="reg-remark" src="http://img.mukewang.com/545308540001678401500040.jpg">
                             </div>
                         </section>
                         <section class="reg-content">
                             <label for="confirm-pwd"></label>
-                            
                             <div class="reg-cell">
-                                <input type="checkbox" checked />
+                                <input class="reg-input" type="checkbox" checked />
                                 <label>我已阅读并同意<a href="#">慕课协议</a></label>
                                 <p><a href="javascript:">立即注册</a></p>
                             </div>

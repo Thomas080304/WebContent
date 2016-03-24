@@ -10,24 +10,37 @@
 }
 .reg-content{
 	margin-bottom: 30px;
+	padding: 0 130px;
+	overflow: hidden;
 }
 .reg-required{
 	position: absolute;
-	margin-right: -1em;
-	color: red;
+    margin-left: -16px;
+    font-style: normal;
+    color: red;
 }
 .reg-remark{
 	position: absolute;
+	margin-left: 10px;
+	margin-top: 8px;
 }
 .reg-label{
 	float: left;
-	width: 70px;
+	margin-top: 8px;
+}
+.reg-cell{
+	display: table-cell;
+	width: 9999px;
+}
+.reg-input{
+	padding: 10px 5px;
+    line-height: 18px;
+    width: 260px;
+    border: 1px solid #d0d6d9;
+    vertical-align: top;
 }
 /*---------------------------------------------------------
 */
-.reg-content{
-	overflow: hidden;
-}
 .reg-wel{
 	line-height: 86px;
 	text-indent: 198px;
