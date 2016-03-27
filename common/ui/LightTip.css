@@ -1,0 +1,46 @@
+/**
+ * 
+ * @LightTip.css
+ * @author xinxuzhang 
+ * @create 15-06-25
+ *
+**/
+
+.ui_lightip {
+	position: fixed;
+	top: 0;
+	z-index: 100;	
+	min-width: 400px;
+	height: 20px;
+	line-height: 20px;
+	padding: 15px;
+	border-radius: 2px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+
+.ui_lightip_success {
+	background-color: #01cf97;
+}
+
+.ui_lightip_error {
+	background-color: #f4615c;
+}
+
+.ui_lightip_icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	background: url(images/LightTip/icon_lightip.png);
+	vertical-align: -4px;
+	*vertical-align: 0;
+}
+
+.ui_lightip_success .ui_lightip_icon  {
+	background-position: 0 0;
+}
+.ui_lightip_error .ui_lightip_icon {
+	background-position: 0 -20px;
+}

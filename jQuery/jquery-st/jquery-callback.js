@@ -15,7 +15,7 @@ jQuery.Callbacks = function(options){
 			  jQuery.extend({},options);
 	var list = [],
 		fire = function(){
-
+			
 		};
 	//previte
 	var self = {
@@ -24,9 +24,9 @@ jQuery.Callbacks = function(options){
 		add:function(){
 			if(list){
 				/*
-				add({a:function(){},b:function(){},length:2})
-				add(aa,bb);	
-				add([aa,bb]);
+					add({a:function(){},b:function(){},length:2})
+					add(aa,bb);	
+					add([aa,bb]);
 				*/
 				(function add(args){
 					jQuery.each(args,function(_,arg){

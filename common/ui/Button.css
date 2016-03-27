@@ -1,0 +1,136 @@
+/**
+ * 
+ * @Button.css
+ * @author xinxuzhang 
+ * @create 15-06-12
+ */
+ 
+.ui_button {	
+	display: inline-block;
+	line-height: 38px;
+	font-size: 14px;
+	text-align: center;	
+	color: #545A6C;
+	border: 1px solid #d0d0d5;
+	border-radius: 4px;
+	padding: 0 15px;
+	min-width: 50px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-transition: border-color .15s, background-color .15s;
+	transition: border-color .15s, background-color .15s;
+	outline: 0 none;
+	cursor: pointer;
+	overflow: visible;
+}
+div.ui_button {
+	display: block;
+}
+.ui_button:hover { 
+	color: #2d3441;
+	border-color: #ababaf;
+	text-decoration: none;
+}
+.ui_button:not(.disabled):active,
+.ui_button:not(.ui_button_loading):active { 
+	background-color: #f5f9fa;
+}
+
+.ui_button.disabled:hover,
+.ui_button_loading,
+.ui_button_loading:hover {
+	color: #545A6C;
+	background-color: #fff;
+	border-color: #d0d0d5;
+}
+
+.ui_button_primary,
+.ui_button_primary.disabled:hover,
+.ui_button_primary.ui_button_loading:hover { 
+	border: 1px solid #00a5e0;
+	background-color: #00a5e0;
+	color: #fff;
+}
+.ui_button_primary:hover { 
+	background-color: #00b4f5;
+	border-color: #00b4f5;
+	color: #fff;
+}
+.ui_button_primary:not(.disabled):active,
+.ui_button_primary:not(.ui_button_loading):active { 
+	background-color: #0092c7;
+	border-color: #0092c7;
+}
+
+
+.ui_button_success, 
+.ui_button_success.disabled,
+.ui_button_success.disabled:hover,
+.ui_button_success.ui_button_loading:hover { 
+	border: 1px solid #01cf97;
+	background-color: #01cf97;
+	color: #fff;
+}
+.ui_button_success:hover { 
+	background-color: #00dba2;
+	border-color: #00dba2;
+	color: #fff;
+}
+
+.ui_button_success:not(.disabled):active,
+.ui_button_success:not(.ui_button_loading):active { 
+	background-color: #00bf8e;
+	border-color: #00bf8e;
+}
+
+
+.ui_button_warning,
+.ui_button_warning.disabled,
+.ui_button_warning.disabled:hover,
+.ui_button_warning.ui_button_loading:hover { 
+	border: 1px solid #f4615c;
+	background-color: #f4615c;
+	color: #fff;
+}
+.ui_button_warning:hover { 
+	background-color: #ff7772;
+	border-color: #ff7772;
+	color: #fff;
+}
+.ui_button_warning:not(.disabled):active,
+.ui_button_warning:not(.ui_button_loading):active { 
+	background-color: #dc5652;
+	border-color: #dc5652;
+}
+
+.ui_button_loading {	
+	cursor: default;
+	pointer-events: none;
+	color: transparent!important;
+}
+
+
+.ui_button.ui_button_loading {
+	background-image: url(images/Button/loading.gif);
+}
+.ui_button_primary.ui_button_loading {
+	background-image: url(images/Button/loading_primary.gif);
+}
+.ui_button_success.ui_button_loading { 
+	background-image: url(images/Button/loading_success.gif);
+}
+.ui_button_warning.ui_button_loading {
+	background-image: url(images/Button/loading_warning.gif);
+}
+
+/*IE7, IE8 loading文字隐藏控制 */
+@media \0screen\,screen\9 {
+	.ui_button_loading {
+		height: 38px;
+		line-height: 100px!important;
+		*line-height: 0!important;
+		vertical-align: top;
+		overflow: hidden;
+	}
+}

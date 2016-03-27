@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>
+        <style type="text/css">
+            .mask-layer{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+            }
+            /*.mask-wrapper{
+                position: absolute;
+                height: 230px;
+                width: 230px;
+                left: 50%;
+                top: 50%;
+                margin-left: -115px;
+                margin-top: -115px;
+            }*/
+            .mask-wrapper{
+                position: absolute;
+                height: 230px;
+                width: 230px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body id="css-zen-garden">
+        <div class="mask-layer">
+            <div class="mask-wrapper">
+                <img src="images/loading34.gif" />
+                <p>loading...</p>
+            </div>
+        </div>
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../lib/jQuery/jquery-1.11.3.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../lib/bootstrap-lib/js/bootstrap.js"></script>
+    </body>
+</html>

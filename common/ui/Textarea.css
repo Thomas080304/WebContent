@@ -1,0 +1,142 @@
+/**
+ * 
+ * @Textarea.css
+ * @author xinxuzhang 
+ * @create 15-06-17
+**/
+
+textarea[rows='5'] {
+  height: 100px;
+}
+textarea[rows='6'] {
+  height: 120px;
+}
+textarea.ui_textarea,
+.ui_textarea > textarea {
+  line-height: 20px;
+  padding: 9px 8px; 
+  border: 1px solid #d0d0d5;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+  color: #545a6c;
+  font-size: 14px;
+  -webkit-transition: border-color .15s, background-color .15s;
+  transition: border-color .15s, background-color .15s;
+  word-break: break-all;
+  vertical-align: top;
+  resize: none;
+  overflow: auto;
+}
+
+div.ui_textarea > textarea {
+  width: 100%;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+/* hover */
+.ui_textarea:hover,
+.ui_textarea > textarea:hover {
+	border-color: #ababaf;
+}
+/* focus */
+.ui_textarea:focus,
+.ui_textarea > textarea:focus {
+  border-color: #00a5e0;
+}
+
+/* textarea with count */
+.ui_textarea_x {
+  position: relative;
+  padding: 2px 9px 0 3px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.ui_textarea_x > textarea {
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  border: 0 none;
+  padding: 7px 0 9px;
+  right: -6px;
+  outline: none;
+  background: none;
+  word-break: break-all;
+  overflow: auto;
+  resize: none;
+  position: relative;
+  z-index: 1;
+}
+.ui_textarea_x > .ui_textarea {
+  position: absolute;
+  border: 1px solid #d0d0d5;
+  border-radius: 4px;
+  background-color: #fff;
+  top: 0; bottom: 0; left: 0; right: 0;
+  -webkit-transition: border-color .15s, background-color .15s;
+  transition: border-color .15s, background-color .15s;
+}
+.ui_textarea_count {
+  display: block;
+  padding: 0 2px 0 8px;
+  line-height: 32px;
+  color: #a2a9b6;
+  font-size: 12px;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+.ui_textarea_x:hover > .ui_textarea {
+  border-color: #ababaf;
+}
+/* 注意相邻位置，如果文本域前后位置发生变化，表单验证组件Validate.js 中 getTarget那里逻辑也要变化 */
+.ui_textarea_x > textarea:focus ~ .ui_textarea {
+  border-color: #00a5e0;
+}
+.ui_textarea_x .ui_placeholder {
+  padding: 7px!important;
+  z-index: 1;
+}
+
+/* IE7 */
+@media screen\9 {
+  div.ui_textarea {
+    padding: 9px 8px;
+    border: 1px solid #d0d0d5;
+    background-color: #fff;
+  }
+  div.ui_textarea > textarea {
+    border: 0 none;
+    padding: 0;
+    margin: -1px 0;
+  }
+}
+
+/* disabled */
+.ui_textarea[disabled]:hover,
+.ui_textarea > textarea[disabled]:hover,
+.ui_textarea[readonly]:hover,
+.ui_textarea > textarea[readonly]:hover,
+.ui_textarea[readonly]:focus,
+.ui_textarea > textarea[readonly]:focus {
+  border-color: #d0d0d5;
+}
+textarea[readonly],
+textarea[disabled],
+textarea.disabled {
+  resize: none;
+}
+
+
+/* error */
+.ui_textarea.error,
+.ui_textarea > .error {
+  border-color: #f4615c!important;
+}
+.ui_textarea > .error {
+	*zoom: expression(this.parentNode.style.borderColor='#f4615c');
+}
+.ui_textarea > input {
+	*zoom: expression(this.parentNode.style.borderColor='');
+}

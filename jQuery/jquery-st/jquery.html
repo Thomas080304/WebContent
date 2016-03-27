@@ -16,29 +16,23 @@
         </style>
     </head>
     <body style="padding-top:50px;">
-        
-       <script type="text/javascript" src="jquery-st.js"></script>
-       <script type="text/javascript">
-            function aa(){}
-            function bb(){}
-            function cc(){}
-            var cbks = $.Callbacks();
-            /*cbks.add(aa);*/
-           /* cbks.add([aa,bb,cc]);*/
-           cbks.add("ss");
-
-           /*
-           cbks = $.Callbacks("memory");
-           cbks.add(aa);
-           cbks.fire();
-           cbks.add(bb);
-           fire();//失效
-           */
-           cbks = $.Callbacks("once");
-           cbks.add(aa);
-           cbks.add(bb);
-           cbks.fire();
-           cbks.fire();
-       </script>
+      <script type="text/javascript" src="../../lib/jQuery/jquery-2.0.3.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          function aa(){
+            alert(1);
+          }
+          function bb(){
+            alert(2);
+          }
+          function cc(){
+            alert(3);
+          }
+          var cbks = $.Callbacks("memory");
+          cbks.add(aa);
+          cbks.fire();
+          cbks.add(bb);
+        });
+      </script>
     </body>
 </html>
