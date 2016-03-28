@@ -1,0 +1,65 @@
+/**
+ * 
+ * @Loading.css
+ * @author xinxuzhang 
+ * @create 15-06-23
+ *
+**/
+
+
+/*
+ * 结构如下：
+ * <div class='ui_loading'>
+     <i class='ui_loading_icon'>  <!-- 使用s标签表示小尺寸的loading图标 -->
+ *  
+*/
+.ui_loading {
+	position: relative;
+}
+.ui_loading.ui_loading_animation {
+	-webkit-animation: fadeIn .5s both;
+	animation: fadeIn .5s both;
+}
+
+.ui_loading_icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;	
+	background: url(images/Loading/loading_blue.gif);
+	/* IE10+ */
+	background: url(images/Loading/loading_blue.png), linear-gradient(transparent, transparent);
+	-webkit-animation: spin 0.8s linear infinite;
+	animation: spin 800ms linear infinite;
+}
+
+.ui_loading > .ui_loading_icon {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -15px 0 0 -15px;
+}
+
+s.ui_loading_icon {
+	width: 20px;
+	height: 20px;
+	background: url(images/Loading/loading_blue_s.gif);
+	background: url(images/Loading/loading_blue_s.png), linear-gradient(transparent, transparent);
+}
+
+.ui_loading > s.ui_loading_icon {
+	margin: -10px 0 0 -10px;
+}
+.ui_loading_primary {
+	background-color: #00a5e0;
+}
+
+.ui_loading_primary > .ui_loading_icon {
+	background: url(images/Loading/loading_white.gif);
+	background: url(images/Loading/loading_white.png), linear-gradient(transparent, transparent);
+}
+
+.ui_loading_primary > s.ui_loading_icon {
+	background: url(images/Loading/loading_white_s.gif);
+	background: url(images/Loading/loading_white_s.png), linear-gradient(transparent, transparent);
+}

@@ -33,6 +33,14 @@ define([
             var a = [];
             for(var i = 0,len = this.length; i < len; i++){
                 if(!fn.call(scope,this[i],i,this)){
+                /*
+                    fn = function(el){
+                        if(el != fn){
+                            return el;
+                        }
+                    }
+                    this[i] = 数组的每一项
+                */
                 //利用函数的返回值不同来
                 //如果是自身则返回undefined，
                 //如果不是自己则返回一个函数，函数也是对象

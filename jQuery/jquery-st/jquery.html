@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link href="../../lib/bootstrap-lib/css/bootstrap.min.css" rel="stylesheet">
+        <!--你自己的样式文件 --> 
+        <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+        <!--[if lt IE 9]>
+        <script src="../../lib/bootstrap-lib/html5shiv.js"></script>
+        <script src="../../lib/bootstrap-lib/respond.min.js"></script>
+        <![endif]-->
+        </style>
+    </head>
+    <body style="padding-top:50px;">
+      <script type="text/javascript" src="../../lib/jQuery/jquery-2.0.3.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          function aa(){
+            alert(1);
+          }
+          function bb(){
+            alert(2);
+          }
+          function cc(){
+            alert(3);
+          }
+          var cbks = $.Callbacks("memory");
+          cbks.add(aa);
+          cbks.fire();
+          cbks.add(bb);
+        });
+      </script>
+    </body>
+</html>
