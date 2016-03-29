@@ -24,6 +24,54 @@
                 
               });
             });
+
+            _.keys = function(obj) {
+                if (!_.isObject(obj)) return [];
+                if (nativeKeys) return nativeKeys(obj);
+                var keys = [];
+                for (var key in obj) if (_.has(obj, key)) keys.push(key);
+                // Ahem, IE < 9.
+                if (hasEnumBug) collectNonEnumProps(obj, keys);
+                return keys;
+            };
+            _.isObject = function(obj) {
+                var type = typeof obj;
+                return type === 'function' || type === 'object' && !!obj;
+            };
+            var nativeKeys         = Object.keys;
+            _.has = function(obj, key) {
+                return obj != null && hasOwnProperty.call(obj, key);
+            };
+            // Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
+            var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
+            var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
+                'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
+            function collectNonEnumProps(obj, keys) {
+                var nonEnumIdx = nonEnumerableProps.length;
+                var constructor = obj.constructor;
+                var proto = (_.isFunction(constructor) && constructor.prototype) || ObjProto;
+
+                // Constructor is a special case.
+                var prop = 'constructor';
+                if (_.has(obj, prop) && !_.contains(keys, prop)) keys.push(prop);
+
+                while (nonEnumIdx--) {
+                    prop = nonEnumerableProps[nonEnumIdx];
+                    if (prop in obj && obj[prop] !== proto[prop] && !_.contains(keys, prop)) {
+                        keys.push(prop);
+                    }
+                }
+            }
+            var ObjProto = Object.prototype;
+            _.contains = _.includes = _.include = function(obj, target, fromIndex) {
+                if (!isArrayLike(obj)) obj = _.values(obj);
+                return _.indexOf(obj, target, typeof fromIndex == 'number' && fromIndex) >= 0;
+            };
+            var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
+            var isArrayLike = function(collection) {
+                var length = collection != null && collection.length;
+                return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
+            };  
         </script>
     </body>
 </html>
