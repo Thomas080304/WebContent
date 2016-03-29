@@ -2896,6 +2896,7 @@ jQuery.Callbacks = function(options){
 		list = [],
 		stack = !options.once && [],
 		fire = function(data){
+			fired = true;
 			memory = options.memory && data;//在第二次add的时候date = memeory = true;
 			firingIndex = firingStart || 0;
 			firingLength = list.length;
@@ -2943,11 +2944,12 @@ jQuery.Callbacks = function(options){
 	            		}
 	            	});
 	            })(arguments);
-	            console.info(list);
-	            if(memory){
-	            	firingStart = start;
-	            	fire(memory);
-	            }
+	           	if(firing){
+	           		firingLength = list.length;
+	           	}else if(memory){
+	           		firingStart = start;//缓存fire之后添加进来的函数
+	           		fire(memory);//调用fire之后添加进来的函数
+	           	}
 	            return this;
 			},
 			remove:function(){
@@ -2962,10 +2964,16 @@ jQuery.Callbacks = function(options){
 				return this;
 			},
 			fireWith:function(context, args){
-				if(list){
+				if(list && (!fired || stack)){//stack在once=false的情况下
+					//fired =true
 					args = args || [];
 					args = [context, args.slice ? args.slice() : args];
-					fire(args);
+					if(firing){
+						stack.push(args);
+					}else{
+						fire(args);
+					}
+					
 				}
 				return this;	
 			},

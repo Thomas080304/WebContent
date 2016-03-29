@@ -19,13 +19,13 @@
         
        <script type="text/javascript" src="jquery-st.js"></script>
        <script type="text/javascript">
-            function aa(){}
+          /*  function aa(){}
             function bb(){}
             function cc(){}
-            var cbks = $.Callbacks();
+            var cbks = $.Callbacks();*/
             /*cbks.add(aa);*/
-           /* cbks.add([aa,bb,cc]);*/
-           cbks.add("ss");
+           /* cbks.add([aa,bb,cc]);
+           cbks.add("ss");*/
 
            /*
            cbks = $.Callbacks("memory");
@@ -34,11 +34,25 @@
            cbks.add(bb);
            fire();//失效
            */
-           cbks = $.Callbacks("once");
+          /* cbks = $.Callbacks("once");
            cbks.add(aa);
            cbks.add(bb);
            cbks.fire();
-           cbks.fire();
+           cbks.fire();*/
+
+          cbks = $.Callbacks("once");
+          var flag = true;
+          function aa(){
+            alert(1);
+            if(flag){
+              fire();
+            }
+          }
+          function bb(){
+            alert(2);
+          }
+          cbks.add(aa,bb);
+          cbks.fire();
        </script>
     </body>
 </html>
