@@ -1,0 +1,93 @@
+.modal-wrapper{
+	position: absolute;
+	width: auto;
+	background: url('../img/modal-gloss.png') no-repeat -200px -80px #eee;
+	z-index: 100;
+	border-radius: 0.4em;
+	padding: 1em 2em;
+}
+.mask-layer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	cursor: pointer;
+}
+.fade{
+	visibility: hidden;
+	display: none;
+	/*animate*/
+	transition: '';
+}
+.fade.in{
+	visibility: visible;
+	display: block;
+}
+@media only screen and (min-width: 768px){
+	.modal-wrapper{
+		width: 520px;
+	}
+}
+/*-----------------------------------------------------
+
+
+.modal-backdrop{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+.modal-backdrop.in{
+	filter: alpha(opacity=50);
+    opacity: .5;
+}
+.modal-backdrop.fade{
+	filter: alpha(opacity=0);
+    opacity: 0;
+}
+.fade.in{
+	filter: alpha(opacity=0);
+    opacity: 0;
+}
+.fade{
+	opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+/*
+--------------------------------------------------------*/
+.delt-btn-wrapper{
+	position: relative;
+}
+.close-reveal-modal{
+	position: absolute;
+    right: 0em;
+    top: -0.2em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.modal-title{
+	font-size: 2em;
+	font-weight: 700;
+	margin: 0.8em 0;
+}
+.modal-content{
+	font-size: 2em;
+	line-height: 2em;
+	font-weight: 300;
+}
+/*
+	test btn
+*/
+.btn{
+	margin-top: 100px;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+}

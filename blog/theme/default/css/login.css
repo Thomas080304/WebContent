@@ -1,0 +1,120 @@
+.validate_form{
+	position: relative;
+	width: 598px;
+	height: 568px;
+	margin: 0 auto;
+	background: url("../images/tcbg.png") no-repeat center center;
+	z-index: 2010;
+}
+.validate_form_inner{
+	position: absolute;
+	top: 200px;
+    padding: 20px 22px;
+}
+.left{
+	float: left;
+	padding: 12px 16px;
+	background: #eee;
+	border: 1px solid #d0d0d5;
+	border-right: none;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.left .fa{
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+	text-align: center;
+}
+.input_form{
+	width: 467px;
+	padding: 10px 16px;
+	font-size: 18px;
+	color: #545a6c;
+	outline: none;
+	border: 1px solid #d0d0d5;
+}
+.password{
+	width: 368px;
+}
+.input_form:focus{
+	border-color: #00a5e0;
+}
+.submit_btn{
+	width: 100px;
+	color: #fff;
+    font-size: 18px;
+    padding: 10px 0px;
+    background: #449d44;
+    border: 1px solid #398439;
+    border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	cursor: pointer;
+}
+.ref_li{
+	float: left;
+}
+.ref_item{
+	display: block;
+	width: 85px;
+	height: 85px;
+	margin: 0px 20px;
+	border-radius: 42.5px;
+	border: 1px solid #E7E7E7;
+	text-align: center;
+	line-height: 85px;
+	text-indent: 9999px;
+}
+.qq{
+	background: url('../images/qq.png') no-repeat center center;
+}
+.sina{
+	background: url('../images/sina.png') no-repeat center center;
+}
+.zfb{
+	background: url('../images/zfb.png') no-repeat center center;
+}
+.git{
+	background: url('../images/git.png') no-repeat center center;
+}
+.ref_item:hover{
+	border: 1px solid #fdd31c;
+	background-color: #fdd31c;
+	text-decoration:none;
+}
+.ref{
+	padding: 0px 20px;
+	overflow: hidden;
+}
+.forget_new{
+	color: #337ab7;
+	text-decoration: none;
+	cursor: pointer;
+}
+.forget_new:hover{
+	color: #3C6182;
+	text-decoration: underline;
+}
+.close_btn:before{
+	position: absolute;
+	display: block;
+	content: " ";
+    top: 30px;
+    right: 1px;
+    width: 55px;
+    height: 32px;
+    z-index: 10;
+    cursor: pointer;
+}
+#zxxBlank{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	z-index: 2000;
+}

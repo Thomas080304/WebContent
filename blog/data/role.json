@@ -1,0 +1,14 @@
+
+[{
+	"username":"ecloud",
+	"password":"password",
+	"name":"Ecloud",
+	"role":88,
+	"roleType":"admin"
+},{
+	"username":"sys",
+    "password":"password",
+    "name":"王辉",
+    "role":8,
+    "roleType":"sys_admin"
+}]

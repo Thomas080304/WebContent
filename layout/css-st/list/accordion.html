@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>accordion</title>
+        <link rel="stylesheet" type="text/css" href="css/include.css">
+    </head>
+    <body id="css-zen-garden">
+    	<div class="page-wrapper">
+            <section class="accordion-wrapper">
+                <ul id="accordion" class="accordion">
+                    <li>
+                        <div class="link" data-toggle="accordion" data-href=".submenu">
+                            <i class="fa fa-paint-brush left-icon"></i>
+                            一级分类
+                            <i class="fa fa-chevron-down right-icon"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link" data-toggle="accordion" data-href=".submenu">
+                            <i class="fa fa-code left-icon"></i>
+                            一级分类
+                            <i class="fa fa-chevron-down right-icon"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link" data-toggle="accordion" data-href=".submenu">
+                            <i class="fa fa-mobile left-icon"></i>
+                            一级分类
+                            <i class="fa fa-chevron-down right-icon"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="link" data-toggle="accordion" data-href=".submenu">
+                            <i class="fa fa-globe left-icon"></i>
+                            一级分类
+                            <i class="fa fa-chevron-down right-icon"></i>
+                        </div>
+                        <ul class="submenu">
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                            <li><a href="http://www.jq22.com">jQuery插件库</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <aside class="sidebar" role="complementary"></aside>
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../../../lib/jQuery/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/accordion.js"></script>
+        <script type="text/javascript">
+            $("#accordion").accordion2({href:".submenu"});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+.accordion-wrapper{
+	margin: 50px 0px 0px 200px;
+}
+body{
+	background: #2D2C41;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+.accordion{
+	width: 100%;
+	max-width: 360px;
+	background: #fff;
+	border-radius: 4px;
+}
+.link{
+	position: relative;
+	padding: 1em 1em 1em 3em;
+	font-weight: 700;
+	color: #4D4D4D;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.link i{/*icon common class*/
+	position: absolute;
+	color: #595959;
+	font-size: 18px; 
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.left-icon{
+	top: 1em;
+	left: 0.8em;
+}
+.right-icon{
+	right: 1.2em;
+	top: 1em;
+}
+.submenu{
+	display: none;
+	background: #444359;
+}
+.submenu a{
+	display: block;
+	color: #d9d9d9;
+	padding: 0.9em;
+}
+.submenu li{
+	/*display: block;
+	padding:0 0.5em;
+	cursor: pointer;*/
+}
+.accordion li.open .link,
+.accordion li.open .link .left-icon,
+.accordion li.open .link .right-icon{
+	color: #b63b4d;
+}
+.accordion li.open .right-icon{
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.submenu a:hover{
+	background: #b63b4d; 
+}
+.submenu li+li a{
+	border-top: 1px solid #4b4a5e;
+}

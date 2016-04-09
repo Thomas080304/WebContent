@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>
+        <style type="text/css">
+        	.wrapper-box{
+        		display: inline-block;
+            	/*margin: 0 auto;不支持*/
+            	border: 1px solid #ccc;
+            	
+        	}
+            .wrapper{
+            	display: table-cell;
+            	vertical-align: middle;
+            	text-align: center;
+            	width: 400px;
+            	height: 400px;
+            }
+        </style>
+    </head>
+    <body id="css-zen-garden">
+    	<div></div>
+       	<div class="wrapper-box">
+       		<div class="wrapper">
+       			<p>如果要使用Bootstrap的js插件，必须先调入jQuery</p>
+	       		<p>如果要使用Bootstrap的js插件，必须先调入jQuery</p>
+	       		<p>如果要使用Bootstrap的js插件，必须先调入jQuery</p>
+       		</div>
+       	</div>
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="../lib/jQuery/jquery-1.11.3.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../lib/bootstrap-lib/js/bootstrap.js"></script>
+    </body>
+</html>

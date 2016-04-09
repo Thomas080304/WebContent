@@ -130,9 +130,7 @@
         var length = collection != null && collection.length;
         return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
     };
-/*--------------------------------------------------------------------------------------------------------
-    @group collection
-*/
+
     // Collection Functions
     // --------------------
 
@@ -140,7 +138,7 @@
     // Handles raw objects in addition to array-likes. Treats all
     // sparse array-likes as if they were dense.
     _.each = _.forEach = function(obj, iteratee, context) {
-        iteratee = optimizeCb(iteratee, context);//function
+        iteratee = optimizeCb(iteratee, context);
         var i, length;
         if (isArrayLike(obj)) {
             for (i = 0, length = obj.length; i < length; i++) {
@@ -446,9 +444,7 @@
         });
         return [pass, fail];
     };
-/*--------------------------------------------------------------------------------------------------------------------------------------------------
-    @group collection
-*/
+
     // Array Functions
     // ---------------
 
