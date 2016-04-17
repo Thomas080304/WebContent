@@ -1,3 +1,6 @@
+.fixtest{
+	text-indent: 9999em;
+}
 .validate_form{
 	position: relative;
 	width: 598px;

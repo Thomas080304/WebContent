@@ -1,3 +1,9 @@
+/*
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin:auto;
+*/
 .modal-wrapper{
 	position: absolute;
 	width: auto;
@@ -6,6 +12,9 @@
 	border-radius: 0.4em;
 	padding: 1em 2em;
 }
+/*
+	屏幕大小改变的时候不会有空白产生
+*/
 .mask-layer{
 	position: fixed;
 	top: 0;
