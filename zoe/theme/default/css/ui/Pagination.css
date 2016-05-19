@@ -1,0 +1,94 @@
+/**
+ * 
+ * @Pagination.css
+ * @author xinxuzhang 
+ * @create 15-06-26 ↓7.4%
+ *
+**/
+
+/*.ui_page_x {}*/
+
+.ui_page {
+  display: inline-block;
+  min-width: 18px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid transparent;
+  text-align: center;
+  color: #a2a9b6;
+  font-size: 14px;
+  -webkit-transition: border-color .15s, background-color .15s;
+  transition: border-color .15s, background-color .15s;
+  vertical-align: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+span.ui_page {
+  cursor: default;
+}
+a.ui_page:hover {
+  border-color: #ced1d9;
+  color: #a2a9b6;
+}
+
+.ui_page > svg {
+ width: 20px;
+ height: 20px;
+ margin-top: 3px;
+}
+
+.ui_page_prev,
+.ui_page_next {
+  background: url(images/Pagination/icons_prev_next.png) no-repeat;
+  background: none, none;
+  text-align: center;
+  fill: currentColor;
+  overflow: hidden;
+}
+.ui_page_next svg {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.ui_page_prev {
+  margin-left: 0;
+}
+.ui_page_next {
+  margin-right: 0;
+}
+.ui_page_prev {
+  background-position: 0 -60px;
+}
+.ui_page_ellipsis {
+  display: inline-block;
+}
+span.ui_page_prev {
+  background-position: 0 -90px; 
+  color: #e5e7eb;
+}
+span.ui_page_next {
+  background-position: 0 -30px;
+  color: #e5e7eb; 
+}
+.ui_page_current {
+  color: #fff;
+  background-color: #00a5e0;
+}
+
+.ui_page_text {
+  color: #545a6c;
+}
+
+.ui_page.loading {
+  background: url(images/Pagination/icon_loading.gif) no-repeat center;
+  color: transparent;
+}
+.ui_page.loading > svg {
+  visibility: hidden;
+}

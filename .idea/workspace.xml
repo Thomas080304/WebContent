@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f1e9c1b2-7e5e-4491-b966-fc67a28afca0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/button-active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/button-over.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/externalLink.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/fade.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/images/git.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/im.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/images/qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/images/sina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/images/tcbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/underline1-hover.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/underline1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/img/visited.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/images/zfb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/Button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Checkbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Date.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/DropList.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/DropPanel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Input.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/LightTip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Loading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Pagination.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Placeholder.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Radio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Range.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Scrollbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Switch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Tab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Textarea.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui/Tips.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/addUserTypeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/addusertypeform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/angular-1.3.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/angular-async-loader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/config/app-routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/config/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/backToPreviousCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/bootstrap-3.0.0/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/highendusers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/home/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/icon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/index/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/lib.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/lowusers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/normalUsersCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/services/normalUsersService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/normalusers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/toolbar/topbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/js/ui-bootstrap-tpls-0.11.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/uitest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/ui/uitest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/app/users/usermng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asyn/theme/default/css/variable.css" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\data\config.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\data\role.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\error_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\error_zh.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\locale_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\locale_zh.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\server_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\i18n\server_zh.properties" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\login.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\template.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\animate.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\icon.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\form.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\adobe_ad.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\charles_wyke-smith.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\codin_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\page_structure_diagram.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\scriptin_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\stylin_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\stylin_logo1_wide.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\visual_stylin_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\visual_stylin_cover_151pxw.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\images\visual_stylin_cover_157pxh.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\include.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\index.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\nav.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\response.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\index\search.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\lib.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\login.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Button.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Checkbox.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Date.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\DropList.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\DropPanel.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Input.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\LightTip.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Loading.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Pagination.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Placeholder.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Radio.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Range.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Scrollbar.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Select.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Switch.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Tab.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Textarea.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\ui\Tips.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\css\variable.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\images\git.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\images\qq.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\images\sina.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\images\tcbg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\images\zfb.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\Button.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\button-active.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\button-over.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\button.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\email.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\externalLink.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\fade.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\im.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\underline1-hover.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\underline1.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\img\visited.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\ui\uitest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\blog\theme\default\uitest.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\common\plugin\alert\alert.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\common\plugin\alert\alert.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\common\plugin\alert\alert.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\css\common.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\flash\as3_clock_2.swf" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\image\preload.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\js\tinybox.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\page\blank-for-test.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\cool\page\jQuery-cool-pop-up-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\css\common.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\demo\html-load.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\demo\jquery-zxxbox-v3-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\demo\php-load.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\image\down_btn.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\js\jquery.zxxbox.3.0-min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\pop-up\jquery.zxxbox.v3\js\jquery.zxxbox.3.0.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\tooltip\201012\jquery-power-float-demo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\tooltip\css\common.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\tooltip\css\powerFloat.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\tooltip\js\jquery-powerFloat.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\workspace\WebContent\jQuery\tooltip\js\mini\jquery-powerFloat-min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/pattern/js/mainCombinePattern.js" afterPath="$PROJECT_DIR$/jQuery/pattern/js/mainCombinePattern.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/pattern/js/mainStrategiesPattern.js" afterPath="$PROJECT_DIR$/jQuery/pattern/js/mainStrategiesPattern.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/pattern/pattern-strategies-test.html" afterPath="$PROJECT_DIR$/jQuery/pattern/pattern-strategies-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery/temp.html" afterPath="$PROJECT_DIR$/jQuery/temp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/ui.css" afterPath="$PROJECT_DIR$/common/ui.css" />
+    </list>
+    <ignored path="WebContent.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="WebContent" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
+    <option name="y" value="-6" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1e9c1b2-7e5e-4491-b966-fc67a28afca0" name="Default" comment="" />
+      <created>1462615080082</created>
+      <option name="number" value="Default" />
+      <updated>1462615080082</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2" y="-6" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

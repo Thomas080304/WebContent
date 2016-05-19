@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>carousel</title> 
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/lib.css">
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/ui.css">
+        <link rel="stylesheet" type="text/css" href="carousel.css">
+    </head>
+    <body>
+    	<div class="wrapper auto">
+            <fieldset class="block">
+                <p>carousel</p>
+                <div class="zxx_test_list_list">
+                     <div id="caroTriggerOut2" class="caro_trigger caro_trigger2">
+                        <a href="javascript:" class="caro_prev" data-rel="caroSwitch2">&laquo;上一张</a>
+                        <a href="javascript:" class="caro_next" data-rel="caroSwitch2">下一张&raquo;</a>
+                    </div>
+                    <div class="caro_box caro_box2">
+                        <ul id="caroBox2" class="caro_container caro_container2">
+                            <li class="caroSwitch2"><img src="img/mm1.jpg" width="256" height="191"></li>
+                            <li class="caroSwitch2"><img src="img/mm3.jpg"></li>
+                            <li class="caroSwitch2"><img data-src="img/mm4.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    <h3></h3>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <p>translate</p>
+                <div class="translate-wrapper auto">
+                    <div class="translate trans-auto">
+                        <span class="trans-vert">
+                            -moz-transform: translate(-50%,-50%);<br>
+                            -webkit-transform: translate(-50%,-50%);<br>
+                            -ms-transform: translate(-50%,-50%);<br>
+                            transform: translate(-50%,-50%);
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="block">
+                <legend>transition</legend>
+                <div class="transition-wrapper">
+                    <div class="transition">
+                        <span class="trans-item trans transi">
+                            <i class="trans-text">1</i>
+                        </span>
+                        <span class="trans-item trans transi">
+                            <i class="trans-text">2</i>
+                        </span>
+                        <span class="trans-item trans transi">
+                            <i class="trans-text">3</i>
+                        </span>
+                        <span class="trans-item trans transi">
+                            <i class="trans-text">4</i>
+                        </span>
+                        <span class="trans-item trans transi">
+                            <i class="trans-text">5</i>
+                        </span>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="block">
+                <legend>animate</legend>
+                <div class="animate-wrapper">
+                     <div class="animate-inner">
+                        <span class="animate unselect anim">
+                            <i class="animate-text">css animate</i>
+                        </span>
+                        <span class="animates unselect anims">
+                            <i class="animate-text">css animate</i>
+                        </span>
+                    </div>
+                </div>
+               
+            </fieldset>
+        </div>
+        <script type="text/javascript" src="../../../lib/jQuery/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="carousel.js"></script>
+        <script type="text/javascript">
+            $("#caroTriggerOut2 a").scroll({
+                container: $("#caroBox2"),
+                number: 1,
+                onSwitch: function(target) {
+                    target.each(function() {
+                        var img = $(this).find("img").get(0);
+                        if (img && !img.src) {
+                            img.src = img.getAttribute("data-src"); 
+                        }
+                    });
+            }
+});
+        </script>
+    </body>
+</html>

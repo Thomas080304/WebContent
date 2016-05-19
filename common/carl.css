@@ -1,0 +1,60 @@
+.carl-wrapper{
+	width: 600px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	outline: 1px solid red;
+}
+.carl-ov{
+	position: relative;
+	width: 470px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.carl-btn{
+	position: relative;
+	width: 470px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.carl-btn-prev,
+.carl-btn-next{
+	position: absolute;
+	top: 75px;
+}
+.carl-btn-prev{
+	left: -10px;
+}
+.carl-btn-next{
+	right: -10px;
+}
+.carl-abs{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 20000px;
+    height: 100%;
+}
+.carl-li{
+	float: left;
+    width: 470px;
+    height: 100%;
+    outline: 1px solid black;
+}
+.carl-indicate span{
+	float: left;
+}
+.carl-indicate{
+	position: relative;
+	text-align: center;
+}
+
+
+
+
+
+
+
+

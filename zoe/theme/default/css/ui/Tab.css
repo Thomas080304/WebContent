@@ -1,0 +1,68 @@
+/**
+ * 
+ * @Tab.css
+ * @author xinxuzhang 
+ * @create 15-06-12
+ */
+/* tabs */
+.ui_tab_tabs {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #DFDFE0;
+  position: relative;
+}
+.ui_tab_tab {
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #555A6C;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ui_tab_tab a {
+  display: block;
+  color: #555A6C ;
+}
+.ui_tab_tab:hover,
+.ui_tab_tab:hover a {
+  color: #00a5e0;
+}
+.ui_tab_tabs .checked,
+.ui_tab_tabs .checked a,
+.ui_tab_tabs .checked:hover {
+  line-height: 36px;
+  padding-top: 2px;
+  margin-bottom: -1px;
+  border-bottom: 3px solid;   
+  color: #00a5e0;
+  cursor: default;
+}
+.ui_tab_line {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  border-bottom: 3px solid #00a5e0;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.ui_tab_tabs > .ui_tab_line ~ .ui_tab_tab {
+  line-height: 40px;
+  padding-top: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+/* contents */
+.ui_tab_contents {
+  margin-top: 30px;
+}
+.ui_tab_content {
+  display: none;
+}
+.ui_tab_content.checked {
+  display: block;
+}

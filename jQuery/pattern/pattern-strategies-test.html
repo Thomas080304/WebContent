@@ -77,15 +77,15 @@
 <body>
 	<form>
 	    <div class="form_control">
-	      <input class="required" value="315359131@qq.com" type="text" name="email" data-tip="请输入您的邮箱" data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确">
+	      <input class="required" value="" type="text" name="email" data-tip="请输入您的邮箱" data-valid="isNonEmpty||isEmail" data-error="email不能为空||邮箱格式不正确">
 	    </div>
 	    <div class="form_control">
-	      <input class="required" value="123456789" type="password" data-tip="请输入您的密码" data-valid="isNonEmpty||between:6-16" data-error="密码不能为空||密码长度6-16位" name="nickname">
+	      <input class="required" value="" type="password" data-tip="请输入您的密码" data-valid="isNonEmpty||between:6-16" data-error="密码不能为空||密码长度6-16位" name="nickname">
 	    </div>
 	    <div class="form_control">
-	      <input class="required" value="王大锤" type="text" name="email" data-tip="请输入您的姓名" data-valid="isNonEmpty||onlyZh||between:2-5" data-error="姓名不能为空||姓名只能为中文||姓名长度为2-5位">
+	      <input class="required" value="" type="text" name="email" data-tip="请输入您的姓名" data-valid="isNonEmpty||onlyZh||between:2-5" data-error="姓名不能为空||姓名只能为中文||姓名长度为2-5位">
 	    </div>
-	    <div class="form_control">
+	    <div class="form_control radio">
 	      <span class="required" data-valid="isChecked" data-error="性别必选" data-type="radio">
 	          <label><input type="radio" name="sex">男</label>
 	          <label><input type="radio" name="sex">女</label>
@@ -118,27 +118,5 @@
 	      <input type="submit" value="提交">
 	    </div>
 	</form>
-	<script type="text/javascript">
-		  $('form').validate({
-		    onFocus: function() {
-		      this.parent().addClass('active');
-		      return false;
-		    },
-		    onBlur: function() {
-		      var $parent = this.parent();
-		      var _status = parseInt(this.attr('data-status'));
-		      $parent.removeClass('active');
-		      if (!_status) {
-		        $parent.addClass('error');
-		      }
-		      return false;
-		    }
-		  });
-
-		  $('form').on('submit', function(event) {
-		    event.preventDefault();
-		    $(this).validate('submitValidate'); //return boolean;
-		  });
-    </script>
 </body>
 </html>

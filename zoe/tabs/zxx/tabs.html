@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>carousel</title> 
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/lib.css">
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../../theme/default/css/ui.css">
+        <link rel="stylesheet" type="text/css" href="tabs.css">
+    </head>
+    <body>
+    	<div class="wrapper auto">
+            <fieldset class="block">
+                <legend>tabs</legend>
+                <div>
+                	<ul class="tablist">
+                        <li class="tab"><a href="#tabpanel1" class="tab_a tab_on tabNormal">知名美女1</a></li>
+                        <li class="tab"><a href="#tabpanel2" class="tab_a tabNormal">不知名美女2</a></li>
+                        <li class="tab"><a href="#tabpanel3" class="tab_a tabNormal">美女3</a></li>
+                    </ul>
+                    <ul class="tab_content">
+                        <li id="tabpanel1" class="tabpanel"><img src="img/mm1.jpg" width="256" height="191"><p>知名美女1：你知道吗？Home键可以快速返回顶部，End键到页面底部！</p></li>
+                        <li id="tabpanel2" class="tabpanel" style="display:none;"><img src="img/mm2.jpg"><p>不知名美女2</p></li>
+                        <li id="tabpanel3" class="tabpanel" style="display:none;"><img src="img/mm3.jpg"><p>美女3</p></li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="block">
+            	<legend>hover tab</legend>
+            	<div>
+            		<ul class="tablist">
+                        <li class="tab"><a href="javascript:" class="tab_a tab_on tabJustHover" data-rel="panelHover1">知名美女1</a></li>
+                        <li class="tab"><a href="javascript:" class="tab_a tabJustHover" data-rel="panelHover2">不知名美女2</a></li>
+                        <li class="tab"><a href="javascript:" class="tab_a tabJustHover" data-rel="panelHover3">美女3</a></li>
+                    </ul>
+                    <ul class="tab_content">
+                        <li id="panelHover1" class="tabpanel"><img src="img/mm1.jpg" width="256" height="191"><p>知名美女1</p></li>
+                        <li id="panelHover2" class="tabpanel" style="display:none;"><img src="img/mm2.jpg"><p>不知名美女1</p></li>
+                        <li id="panelHover3" class="tabpanel" style="display:none;"><img src="img/mm3.jpg"><p>美女3</p></li>
+                    </ul>
+            	</div>
+            </fieldset>
+            <fieldset class="block">
+            	<legend>tab transition</legend>
+            	<div>
+            		<ul id="tabTransUl" class="tablist">
+                        <li class="tab"><a href="#panelTrans1" class="tab_a tab_on">为了测试</a></li>
+                        <li class="tab"><a href="#panelTrans2" class="tab_a">拉伸无罪</a></li>
+                        <li class="tab"><a href="#panelTrans3" class="tab_a">你懂的~</a></li>
+                    </ul>
+                    <ul class="tab_content tab_content_rel">
+                    	<li id="panelTrans1" class="tabpanel_abs"><img src="img/mm1.jpg"></li>
+                        <li id="panelTrans2" class="tabpanel_abs" style="display:none;"><img src="img/mm3.jpg"></li>
+                        <li id="panelTrans3" class="tabpanel_abs" style="display:none;"><img src="img/mm4.jpg"></li>
+                    </ul>
+            	</div>
+            </fieldset>
+            <fieldset class="block">
+            	<legend>auto play</legend>
+            	<div>
+            		<div class="tab_limit">
+                    	<div id="tabAutoOperate" class="tab_auto_play"></div>
+                        <ul id="tabAutoTrigger" class="tablist">
+                            <li class="tab"><a href="javascript:" class="tab_a tab_on" data-rel="tabAutoPlay1">美女1</a></li>
+                            <li class="tab"><a href="javascript:" class="tab_a" data-rel="tabAutoPlay2">美女2</a></li>
+                        </ul>
+                        <ul class="tab_content tab_content_rel">
+                            <li id="tabAutoPlay1" class="tabpanel_abs"><img src="img/mm1.jpg"></li>
+                            <li id="tabAutoPlay2" class="tabpanel_abs" style="display:none;"><img src="img/mm3.jpg"></li>
+                        </ul>
+                    </div>
+            	</div>
+            </fieldset>
+        </div>
+        <script type="text/javascript" src="../../../lib/jQuery/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="tabs.js"></script>
+        <script type="text/javascript">
+        	$(".tabNormal").tab({
+				classAdd: "tab_on"
+			});
+			$(".tabJustHover").tab({
+				classAdd: "tab_on",
+				eventType: "hover",
+				onSwitch: function(target) {
+					var img = target.find("img").get(0);
+					if (img && !img.src) {
+						img.src = img.getAttribute("data-src");	
+					}
+				}	
+			});
+			$("#tabTransUl a").tab({
+				classAdd: "tab_on",
+				animation: "translate"
+			});
+			$("#tabAutoTrigger a").tab({
+				classAdd: "tab_on",
+				animation: "translate",
+				eventType: "hover",
+				hoverStop: true,
+				autoTime: 2000,
+				container: $("#tabAutoOperate")
+			});
+        </script>
+    </body>
+</html>

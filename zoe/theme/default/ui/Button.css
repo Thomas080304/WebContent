@@ -1,0 +1,182 @@
+/*
+	位置	position top right z-index display float
+	大小 	width height padding margin min-width 
+	文字	font-size line-height color 
+			text-align text-decoration text-indent text-shadow 
+			letter-space white-space
+	背景 	background background-repeat background-position 
+			border border-radius
+	其他 	animation transition cursor outline overflow
+	l v h f a
+ */
+.btn,
+.btn:visited{
+	display: inline-block;
+	padding: 0 15px;
+	min-width: 50px;
+	font-size: 14px;
+	line-height: 38px;
+	color: #545A6C;
+	text-align: center;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid #d0d0d5;
+	border-radius: 4px;
+	transition: border-color 0.15s,background-color 0.15s;
+	-webkit-transition:border-color 0.15s,background-color 0.15s;
+	outline: none;
+	cursor: pointer;
+	overflow: visible;
+}
+.btn:hover,
+.btn:focus{
+	color: #2d3441;
+	text-decoration: none;
+	border-color: #ababaf;
+
+}
+.btn:active{
+	background-color: #f5f9fa;
+}
+div.btn{
+	display: block;
+}
+/*
+	image button
+*/
+.img_btn,
+.img_btn:visited{
+	display: block;
+	width: 203px;
+	height: 72px;
+	text-indent: -9999em;
+	background: url('img/buttons.png') no-repeat -203px 0px;
+}
+.img_btn:hover,
+.img_btn:focus{
+	background-position: right top;
+}
+.img_btn:active{
+	background-position: left top;
+}
+
+/*
+	css button
+*/
+.btn_css,
+.btn_css:visited{
+	display: block;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+	text-shadow: 2px 2px 2px #66a300;
+	color: #fff;
+	background-color: #8cca12;
+	background-image: -webkit-linear-gradient(top,#abe142,#67a400);
+	background-image: linear-gradient(top,#abe142,#67a400);
+	border: 1px solid #66a300;
+	border-radius: 4px;
+	transition: background-color 0.15s,border-color 0.15s,text-shadow 0.15s,background-image 0.15s;
+}
+.btn_css:hover,
+.btn_css:focus{
+	text-shadow: 2px 2px 2px #ff7400;
+	background-color: #f7a300;
+	border-color: #ff7400;
+	background-image: -webkit-linear-gradient(top,#f7a300,#ff7400);
+	background-image: linear-gradient(top,#f7a300,#ff7400);
+}
+.btn_css:active{
+	text-shadow: 2px 2px 2px #868686;
+	background-color: #a7a7a7;
+	border-color: #868686;
+	background-image: -webkit-linear-gradient(top,#a7a7a7,#868686);
+	background-image: linear-gradient(top,#a7a7a7,#868686);
+}
+/*
+
+	tooltip
+*/
+ .tooltip{
+ 	position: relative;
+ }
+.content{
+	position: absolute;
+	top: 150%;
+	left: 0;
+	padding: 0.5em 2em;
+	background-color: #f5f9fa;
+	white-space: nowrap;
+	border: 1px solid #ccc;
+}
+.content.fade{
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	left: -9999em;
+}
+.content.in{/*js 编程*/
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=1);
+	left: 0;
+}
+.fade.in{
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=1);
+	left: 0;
+}
+.fade{
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	left: -9999em;
+	transition: opacity 1s, visibility 1s;
+	-webkit-transition: opacity 1s, visibility 1s;
+}
+.tooltip:hover span{/*test*/
+	display: block;
+ 	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=1);
+	left: 0;
+ }
+.content:before{
+	content: '';
+    position: absolute;
+    top: -20px;
+    left: 29px;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: transparent transparent #f5f9fa transparent;
+    z-index: 100;
+}
+.content:after{
+	content: '';
+    position: absolute;
+    top: -24px;
+    left: 27px;
+    width: 0;
+    height: 0;
+    border: 12px solid;
+    border-color: transparent transparent #ccc transparent;
+}
+ .arrow{
+ 	position: absolute;
+ 	width: 0;
+ 	height: 0;
+ 	border: 10px solid transparent;
+ 	/*下 左 上 右*/
+ 	border-color: transparent transparent #D2D5D6  transparent ;
+ 	margin-top: -27px;
+    margin-left: 8px;
+ }
+
+
+
