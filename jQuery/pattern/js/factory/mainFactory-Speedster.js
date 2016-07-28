@@ -4,17 +4,24 @@
 require.config({
     baseUrl:"../../",
     paths:{
-        "jquery":"lib/jQuery/jquery-1.11.3"
+        "jquery":"lib/jQuery/jquery-1.11.3",
+        "InterfaceUtil":"jQuery/pattern/utils/InterfaceUtil",
+        "BicycleInterface":"jQuery/pattern/js/factory/mainFactory-BicycleInterface"
     }
 });
+//可以在每个实例中测试是否实现了当前的Interface
+//缺点：在模块化中代码太分散
 define([
-    "jquery"
-],function($){
+    "jquery",
+    "InterfaceUtil",
+    "BicycleInterface"
+],function($, InterfaceUtil, BicycleInterface){
     /**
      * implements BicycleInterface
      * @constructor
      */
     var Speedster = function(){
+        Interface.ensureImplements(this,BicycleInterface);
         console.info("Speedster constructor");
     };
     Speedster.prototype = {

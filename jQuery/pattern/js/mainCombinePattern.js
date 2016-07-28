@@ -40,7 +40,7 @@ define([
                     break;
                 }
             }
-            this.element.remove(child.getElement());
+            //this.element.remove(child.getElement());
         },
         getChild:function(i){
             console.info("getChild");
@@ -97,7 +97,10 @@ define([
     };
 
     var topGallery = new DynamicGalleryItem("top-gallery");
-    topGallery.add(new GalleryImage("http://image.zhangxinxu.com/image/study/s/s128/mm2.jpg"));
+    var img1 = new GalleryImage("http://image.zhangxinxu.com/image/study/s/s128/mm2.jpg");
+    var img12;
+    topGallery.add(img1);
+    topGallery.remove(img12);
     topGallery.add(new GalleryImage("http://image.zhangxinxu.com/image/study/s/s128/mm2.jpg"));
     topGallery.add(new GalleryImage("http://image.zhangxinxu.com/image/study/s/s128/mm2.jpg"));
     var vacationPhotos = new DynamicGalleryItem("vacation-photos");
