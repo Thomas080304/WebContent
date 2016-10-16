@@ -1,0 +1,51 @@
+
+body{
+	background-color: #2f4050;
+}
+/*page wrapper @structor*/
+.page-wrapper{
+	width: 100%;
+	overflow-x: hidden;
+}
+/*nav -wrapper*/
+.nav-wrapper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 220px;
+}
+/*
+main wrapper @structor 
+	@include 
+	header-wrapper 
+	content-wrapper 
+	footer-wrapper
+*/
+.main-wrapper{
+	position: relative;
+	margin-left: 220px;
+	border: 1px solid black;
+}
+.header-wrapper{
+    height: 60px;
+    border: 1px solid red;
+}
+.content-wrapper{
+	min-height: 400px;
+	padding-bottom: 40px;
+}
+.footer-wrapper{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+}
+/*
+slide wrapper @structor
+*/
+.sidebar-wrapper{
+	position: fixed;
+	right: 0;
+	top: 60px;
+}

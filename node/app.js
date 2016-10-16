@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 
 var port = process.env.PROT || 3000;
 var app = express();
-mongoose.connect("mongodb://localhost/imooc");
+mongoose.connect("mongodb://127.0.0.1:3000/imooc");
 app.set("views","./app/views/pages");
 app.set("view engine","jade");
 app.use(bodyParser.urlencoded({extended: true}));

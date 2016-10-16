@@ -14,7 +14,14 @@ define([
     "InterfaceUtil",
     "ExtendUtil"
 ],function($,Interface,extend){
+    /*
+        define interface
+    */
     var BicycleInterface = new Interface("BicycleInterface",["assemble","wash","ride","repair","getPrice"]);
+    /*
+        define a Class Speedster
+        @ implments BicycleInterface
+    */
     var Speedster = function(){
         //implements BicycleInterface
         console.info("Speedster constructor");
@@ -88,10 +95,14 @@ define([
             return this.bicycle.getPrice();
         }
     };
+
     var HeadLightDecorator = function(bicycle){
+        //继承父类的实例方法
         HeadLightDecorator.SuperClass.constructor.call(this,bicycle);
     };
+    //继承父类的原型方法
     extend(HeadLightDecorator,BicycleDecoratorAbs);
+    //修改被包装对象的方法
     HeadLightDecorator.prototype.assemble = function(){
         return this.bicycle.assemble()+"Attach headLight to handlers";
     };
@@ -108,6 +119,7 @@ define([
     BellDecorator.prototype.getPrice = function(){
         return this.bicycle.getPrice()+6;
     };
+    //给被包装的对象添加新的方法
     BellDecorator.prototype.ringBell = function(){
         return "Bell Ring";
     };
