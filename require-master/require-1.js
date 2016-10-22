@@ -83,9 +83,9 @@ var Salut = {};
 	}
 
 	/**
-	 * check execute stack define(name,[],function)
-	 * modules[name] = function.call();
-	 * require('js/xx')
+	 * require('js/b')..
+	 * modules['b'] = function.call
+	 * 
 	 */
 	 var executeStack = [];
 	 var dependStack = [];
@@ -98,6 +98,7 @@ var Salut = {};
 		dependStack =dependStack.concat((depends||[]).map(function(item){
 			return item.split('/')[1];
 		}));
+		//缓存当前函数
 		executeStack.push(function(){
 			var params = [];
 			if(others && others.length > 0){
@@ -107,7 +108,9 @@ var Salut = {};
 			}
 			return modules[moduleName] = func.apply(Salut, params);
 		});
+		//执行当前函数
 		_checkIfExecuteStack(moduleName);
+		//缓存依赖
 		for(var i = 0,len = depends.length; i <len; i++){
 			(function(i){
 				excuteChain.after(function() {
